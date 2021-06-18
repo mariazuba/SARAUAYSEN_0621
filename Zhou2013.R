@@ -13,7 +13,9 @@
 #setwd("D:/RESPALDOS/Proyectos/AUSTRAL SARDINA/EV_STOCK/XI/2020")
 getwd()
 
+##################################################################################################
 # model
+##################################################################################################
 BDM=function(K,dep,b,C,r){  ### biomass dynamics model
  B=err.B=rep(NA,length(C))   
  B[1]=b*K;b1=B[1]
@@ -27,8 +29,9 @@ BDM=function(K,dep,b,C,r){  ### biomass dynamics model
  } else {10^5}
 }
 
-
+##################################################################################################
 # simulation 
+##################################################################################################
 sim1=function(k25=k25,k75=k75,r25=r25,r75=r75,yr=yr,C=C,nsim=nsim,msy=NULL){ 
  Bend.keep=K.keep=r.keep=dep.keep=d.keep=vector()
  nyr=length(yr)
@@ -79,8 +82,8 @@ sim1=function(k25=k25,k75=k75,r25=r25,r75=r75,yr=yr,C=C,nsim=nsim,msy=NULL){
 #
 #####################################################################
 # input catch data and r range for sautral XI stock 
-C=c(4033,5318,4163,7547,5097,3853,653,1352,2819)
-yr=seq(2012,2020)
+C=c(4033,5318,4163,7547,5097,3853,653,1352,1839,2797)
+yr=seq(2012,2021)
 r.lci=0.85;r.uci=1.2
 # search through K grids, with specific range for K1 follow 
 N1=100
@@ -138,10 +141,10 @@ all3=all2[all2$k>k25 & all2$k<k75 & all2$r>r25 & all2$r<r75,]
 para=list(k25=k25,k75=k75,r25=r25,r75=r75)
 
 
-#############################
+##################################################################################################
 nsim=100
 #GRAFICA LA BIOMASA
-name1<-paste(getwd(),"/figuras/biomasa.png",sep="")
+name1<-paste(getwd(),"/Figuras/Fig1_Zhou2013_biomasa.png",sep="")
 png(file=name1,width=900,height=800)
 #png(file=name1,width=800,height=600)
 #png(filename ="bioma_shijie.png",width=600,height=500)
@@ -149,8 +152,9 @@ par(mar=c(5.2,6.2,4,4),cex.axis=1.3,cex.lab=1.3)
 out1=sim1(k25=k25,k75=k75,r25=r25,r75=r75,C=C,yr=yr,nsim=nsim,msy=msy.media)
 dev.off()
 
-
+##################################################################################################
 #EXTRAE DATOS DE INTERES PARA LA INCERTIDUMBRE
+##################################################################################################
 F2Fmsy=as.data.frame(out1[8]);B2Bmsy=as.data.frame(out1[9])
 quant=function(x)quantile(x,c(0.2,0.8))
 dat.out=data.frame(year=yr,B2Bmsy.med=apply(B2Bmsy,1,median),
@@ -189,8 +193,8 @@ fs=data.frame(cbind(BF[,c(8,3)],yr)) # F y Biomasa media
 #  sensitivity to assumed upper depletion (if needed) #
 #######################################################
 med.out=low.out=up.out=matrix(NA,nrow=4,ncol=6)
-d.l=c(0.4,0.6,0.7,0.8)  # assumed upper depletion levels
-name2<-paste(getwd(),"/figuras/depletion.png",sep="")
+d.l=c(0.45,0.6,0.7,0.8)  # assumed upper depletion levels
+name2<-paste(getwd(),"/Figuras/Fig2_Zhou2013_depletion.png",sep="")
 png(file=name2,width=1400,height=1400)
 layout(matrix(1:4,ncol=2,byrow=T),widths=c(1,1),heights=c(1,1))
 for(i in 1:4){ 
@@ -202,8 +206,8 @@ for(i in 1:4){
   nsim=100
   par(mar=c(5.5,6.9,4,4),cex.axis=1.3)
   out1=sim1(k25=k25,k75=k75,r25=r25,r75=r75,C=C,yr=yr,nsim=nsim,msy=msy.media)
-  #tex=paste("reducci?n=",d.l[i],sep="")
-  #text(2013,round(para$k25,0)*0.3,tex,cex=1.5,xpd=T)
+  tex=paste("reducción=",d.l[i],sep="")
+  text(2015,round(para$k25,0)*0.26,tex,cex=1.5,xpd=T)
   sp=out1[1:5]
   sp=as.data.frame(sp)   # summary(sp)
   colnames(sp)= c('k','r','msy','Bend','D')
@@ -223,9 +227,10 @@ colnames(low.out)=c("k","r","d.upper","msy","Bend","D")
 colnames(up.out)=c("k","r","d.upper","msy","Bend","D")
 med.out;low.out;up.out
 
-
+##################################################################################################
 # parameters as a function of assumed upper depletion level
-name3<-paste(getwd(),"/figuras/sensitivity.png",sep="")
+##################################################################################################
+name3<-paste(getwd(),"/Figuras/Fig3_Zhou2013_sensitivity.png",sep="")
 png(file=name3,width=900,height=1000)
 layout(matrix(1:4,ncol=2,byrow=T),widths=c(1,1),heights=c(1,1))
 par(mar=c(5.6,6.7,4,4),cex.axis=1.4) 
@@ -251,8 +256,10 @@ mtext("Reducción",side=2,line=3.8,cex=1.4)
 mtext("Reducción superior",side=1,line=3.6,cex=1.4)
 
 dev.off()
-#
-#GRAFICA DIAGRAMA DE FASE
+
+##################################################################################################
+# GRAFICA DIAGRAMA DE FASE
+##################################################################################################
 library(MASS)
 mc.dat<-BF2msy.end
 Bmrs=tabla[3,1]/2 #BMRS
@@ -281,7 +288,7 @@ pol3<-matrix(c(xmax,1.1,xmax,ymax,0.9,ymax,0.9,1.1),ncol=2,byrow=T)
 pol4<-matrix(c(0.5,ini,0.9,ini,0.9,ymax,0.5,ymax),ncol=2,byrow=T)
 pol5<-matrix(c(-0.07,ini,0.5,ini,0.5,ymax,-0.07,ymax),ncol=2,byrow=T)
 
-name4<-paste(getwd(),"/figuras/fase.png",sep="")
+name4<-paste(getwd(),"/Figuras/Fig4_Zhou2013_fase.png",sep="")
 png(file=name4,width=1200,height=1000)
 par(mar=c(6.1,6.5,4.8,4.8),cex.axis=1.5,cex.lab=1.5)
 plot(X1,Y1,col=0,xlab="",ylab="",yaxt="n",xlim=c(xmin,max(X1)*1.1),
@@ -316,8 +323,10 @@ text(X1[a2],Y1[a2]*1.06,yr[a2],cex=1.3,pos=4,col=4)
 #text(0.23,1.18,"Colapso y/o Agotamiento",cex=1.6,pos=4,lwd=2,srt=90)
 box()
 dev.off()
-#
+
+##################################################################################################
 #CALCULO DE LA CBA 2020 PARA SARDINA AUSTRAL XI
+##################################################################################################
 mata<-out1.backup[1:5];mm<-length(mata);mato<-vector()
 for(p in 1:mm){mato<-cbind(mato,mata[[p]])}
 mate<-as.data.frame(mato)
@@ -338,14 +347,17 @@ for(y in 1:length(Fi)){
  }
 }
 
-#GRAFICA LA CBA 2020 PARA sardina austral
+
+##################################################################################################
+# GRAFICA LA CBA 2020 PARA sardina austral
+##################################################################################################
 FF<-formatC(Fi,format="f",digits=2)
 BB<-expression(paste("Biomasa (mil t)",sep=""))
 Binf<-tabla[2,1]/2;Bsup<-tabla[4,1]/2
 rng1<-range(BT[,,],na.rm=T)
 ax2<-seq(0,rng1[2]*1.15,by=10000);cols<-"#858585";y1<-length(yrs_pro)
 
-name5<-paste(getwd(),"/figuras/Proyeccion_B.png",sep="")
+name5<-paste(getwd(),"/Figuras/Fig5_Zhou2013_Proyeccion_B.png",sep="")
 png(file=name5,width=900,height=800)
 #x11(width=8,height=7)
 par(mar=c(6.1,6.2,4.8,4.8),cex.axis=1.4,cex.lab=1.4)
@@ -362,13 +374,15 @@ expression(F[paste("0.58")])),lty=c(2,2,2,2,2),lwd=c(2,2,2,2,2),cex=1.4,
 col=c(1,2,3))
 dev.off()
 
-#GRAFICA LA CAPTURA
+##################################################################################################
+# GRAFICA LA CAPTURA
+##################################################################################################
 CC<-expression(paste("Captura (mil t )",sep=""))
 MRS=tabla[3,3]
 rng2<-range(CT[,,],na.rm=T)
 ax3<-seq(0,rng2[2]*1.15,by=5000)
 
-name6<-paste(getwd(),"/figuras/capturas.png",sep="")
+name6<-paste(getwd(),"/Figuras/Fig6_Zhou2013_capturas.png",sep="")
 png(file=name6,width=900,height=800)
 
 #x11(width=8,height=7)
@@ -386,7 +400,9 @@ expression(F[paste("0.58")])),lty=c(2,2,2,2,2),lwd=c(2,2,2,2,2),cex=1.4,
 col=c(1,2,3))
 dev.off()
 
-#TABLA DE RESULTADOS
+##################################################################################################
+# TABLA DE RESULTADOS
+##################################################################################################
 ct<-matrix(NA,length(Fi),5)
 for(i in 1:length(Fi)){
  ct[i,]<-as.numeric(quantile(CT[i,,2],probs=c(.1,.2,.3,.4,.5)))  # CT[i,,2] (el 2 representa 1 año de proyección, 1 es el año actual)
@@ -395,7 +411,10 @@ colnames(ct)<-c("10%","20%","30%","40%","50%")
 rownames(ct)<-formatC(Fi,format="f",digits=2)
 cat("\n")
 print(ct)
-#RANGO CBA PARA PBR Al MRS (2) y EL 2021(2)
+
+##################################################################################################
+# RANGO CBA PARA PBR Al MRS (2) y EL 2021(2)
+##################################################################################################
 rango<-quantile(CT[2,,2],prob=c(0.025,0.25,0.50,0.75,0.975));rango
 #
 #FIN
