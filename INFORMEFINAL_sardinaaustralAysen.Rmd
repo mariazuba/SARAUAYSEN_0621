@@ -984,18 +984,17 @@ v)  Finalmente, es importante señalar que la evaluación de stock del recurso e
 
 El período de análisis abarca los años 2006 a 2020. Los índices que se utilizan en este modelo, corresponden a la información de desembarques oficiales (Sernapesca) y biomasa del crucero ($B_{cru}$) de evaluación directa desarrollado por IFOP en aguas interiores de la Región de Aysén (**Figura 16**). \vspace{0.5cm}
 
+
 ```{=tex}
-\begin{center}
-\includegraphics[width=0.5\textwidth]{SPiCT/Figuras/datos-1.pdf}
-\end{center}
+\begin{figure}[htb!]
+\centering
+\includegraphics[width=0.7\textwidth]{SPiCT/Figuras/datos-1.pdf}
+\caption{Ajuste a la estructura de tallas de las capturas de sardina austral de la Región de Aysén.}
+\label{Fig13}
+\end{figure}
 ```
-```{=tex}
-\vspace{-0.1cm}
-\small
-\textbf{Figura 16}. Ajuste a la estructura de tallas de las capturas de sardina austral de la Región de Aysén.
-\normalsize 
-\vspace{0.5cm}
-```
+
+
 La \textbf{Tabla \ref{Tab11}} muestra las estimaciones de los parámetros del modelo con Intervalos de confianza del 95% para el modelo de producción excedentaria. Hay que tener en cuenta que el intervalo de confianza para el parámetro de forma de producción $n$ incluye el simétrico (Schaefer) caso n = 2. De este modelo t, no podemos decir con certeza si la producción de biomasa está sesgada. La capacidad de carga para el stock explotable se prevé que sea aproximadamente 10.02 mil t. para la curva de producción general. Sin embargo, el intervalo de dependencia es extremadamente amplio con un intervalo más bajo de 4300 t. y un intervalo superior de 135 mil t. Claramente, las predicciones del modelo están sufriendo debido a la escasez de datos y quizas a una basica sintonización del modelo. Sin embargo, el modelo proporciona una primera estimación de la abundancia absoluta. Con respecto a las variables de estado calculadas consideran un nivel de biomasas para el ultimo año de mil toneladas aproximadamente. \vspace{0.5cm}
 
 | parámetros   | estimado       | IC inferior   | IC superior   |
@@ -1022,18 +1021,17 @@ La \textbf{Tabla \ref{Tab11}} muestra las estimaciones de los parámetros del mo
 
 La **Figura 17** muestra la biomasa absoluta del stock de sardina austral para la Region de Aysén un declive desde el año 2015 cercano a las mil t., pero con un alto grado de incertidumbre de estimación. De la misma manera, el gráfico superior izquierdo muestra un progresivo aumento de la mortalidad por pesca relativa a un eventual objetivo de manejo ($F_{RMS}$). También es posible identificar la trayectoria de la mortalidad por pesca absoluta, que están por sobre un eventual PBR del RMS indicado en la línea negra. Además, se estima para el año 2020 un F en 1.71 año^-1^. Amplios intervalos de confianza como lo indica la zona sombreada de los gráficos para los parámetros estimados y la serie de tiempo de biomasa del proceso de ajuste y sintonización del modelo de evaluación utilizado. El grafico inferior derecho se identifica la curva de producción de la población, en donde es posible identificar que el año 2018 el stock de sardina austral estuvo en su maximo rendimiento a través de la remoción del excedente.
 
+
 ```{=tex}
-\begin{center}
-\includegraphics[width=0.9\textwidth]{SPiCT/Figuras/Salidas-1.pdf}
-\end{center}
+\begin{figure}[htb!]
+\centering
+\includegraphics[width=0.7\textwidth]{SPiCT/Figuras/Salidas-1.pdf}
+\caption{Estimaciones SPiCT estimado en sardina austral de (a) la biomasa absoluta, (b) mortalidad por pesca relativa, (c)  mortalidad por pesca absoluta y (d)  curvas de producción derivadas del modelo. Las líneas (azules) indican valores medianos y áreas sombreadas en indicar intervalos de confianza (IC) del 95\%. Líneas negras horizontales denotan PBR de la pesquería.}
+\label{Fig14}
+\end{figure}
 ```
-```{=tex}
-\vspace{-0.1cm}
-\small
-\textbf{Figura 17}. Estimaciones SPiCT estimado en sardina austral de (a) la biomasa absoluta, (b) mortalidad por pesca relativa, (c)  mortalidad por pesca absoluta y (d)  curvas de producción derivadas del modelo. Las líneas (azules) indican valores medianos y áreas sombreadas en indicar intervalos de confianza (IC) del 95\%. Líneas negras horizontales denotan PBR de la pesquería.
-\normalsize 
-\vspace{0.5cm}
-```
+
+
 La **Figura 18** muestra la evolución de la biomasa y la mortalidad por pesca desde el año inicial (aquí 2006) indicado con un círculo hasta el año terminal (aquí 2020) indicado con un cuadrado en un esquema de fases.
 
 El diamante amarillo indica la biomasa media durante un largo período si se mantiene la presión pesquera actual (2020). Este punto se puede interpretar como el equilibrio de captura y se denota E (Bo) en la leyenda de la figura como una forma estadística de expresar la expectativa de la biomasa como t=o.
@@ -1042,18 +1040,18 @@ De acuerdo a este diagrama, la pesquería de sardina austral estuvo sometida a b
 
 Una línea roja discontinua vertical en Bt = 0 indica el nivel de biomasa por debajo del cual la población se ha desplomado. Esta pesquería comienza en un estado de vulnerabilidad el año 2006. Es importante visualizarlos conjuntamente ya que los dos puntos de referencia están altamente (negativamente) correlacionados.
 
+
 ```{=tex}
-\begin{center}
+\begin{figure}[htb!]
+\centering
 \includegraphics[width=0.7\textwidth]{SPiCT/Figuras/Salidas 2-1.pdf}
-\end{center}
+\caption{Diagrama de explotación B-F de sardina austral Región de Aysén durante los años 2006 y 2020.}
+\label{Fig15}
+\end{figure}
 ```
-```{=tex}
-\vspace{-0.1cm}
-\small
-\textbf{Figura 18}. Diagrama de explotación B-F de sardina austral Región de Aysén durante los años 2006 y 2020. 
-\normalsize 
-\vspace{0.5cm}
-```
+
+
+
 \pagebreak
 
 #### b) LBPA, Length-Based Pseudocohort Analysis (Canales *et al*., 2020)
@@ -1076,78 +1074,70 @@ La \textbf{Tabla \ref{Tab12}} muestra los parámetros biológicos de sardina aus
 
 : \label{Tab12} Parámetros de crecimiento y mortalidad natural .
 
+
+
 ```{=tex}
-\begin{center}
+\begin{figure}[htb!]
+\centering
 \includegraphics[width=0.7\textwidth]{LBPA/Figuras/ajuste_tallas-1.pdf}
-\end{center}
+\caption{Ajuste a la estructura de tallas de las capturas de sardina austral de la Región de Aysén.}
+\label{Fig16}
+\end{figure}
 ```
+
+
+
 ```{=tex}
-\vspace{-0.1cm}
-\small
-\textbf{Figura 19}. Ajuste a la estructura de tallas de las capturas de sardina austral de la Región de Aysén.
-\normalsize 
-\vspace{0.5cm}
+\begin{figure}[htb!]
+\centering
+\includegraphics[width=0.7\textwidth]{LBPA/Figuras/ajusteTallasAcumuladas-1.pdf}
+\caption{Ajuste a la estructura de tallas acumuladas de las capturas de sardina austral de la Región de Aysén.}
+\label{Fig17}
+\end{figure}
 ```
+
+
 ```{=tex}
-\begin{center}
-\includegraphics[width=0.6\textwidth]{LBPA/Figuras/ajusteTallasAcumuladas-1.pdf}
-\end{center}
+\begin{figure}[htb!]
+\centering
+\includegraphics[width=0.7\textwidth]{LBPA/Figuras/EstatusTallas-1.pdf}
+\caption{Estructuras de tallas calculadas por LBPA. La línea verde representa las tallas sin pesca, la línea amarilla muestra una estructura de talla en relación al PBR (SPR 60\%) y por ultimo la línea roja representa la talla actual.}
+\label{Fig18}
+\end{figure}
 ```
+
+
 ```{=tex}
-\vspace{-0.1cm}
-\small
-\textbf{Figura 20}. Ajuste a la estructura de tallas acumuladas de las capturas de sardina austral de la Región de Aysén.
-\normalsize 
-\vspace{0.5cm}
+\begin{figure}[htb!]
+\centering
+\includegraphics[width=0.7\textwidth]{LBPA/Figuras/selectividad_talla-1.pdf}
+\caption{Curvas de selectividad y madurez para sardina austral de la Región de Aysén.}
+\label{Fig19}
+\end{figure}
 ```
+
+
 ```{=tex}
-\begin{center}
-\includegraphics[width=0.6\textwidth]{LBPA/Figuras/EstatusTallas-1.pdf}
-\end{center}
-```
-```{=tex}
-\vspace{-0.1cm}
-\small
-\textbf{Figura 21}. Estructuras de tallas calculadas por LBPA. La línea verde representa las tallas sin pesca, la línea amarilla muestra una estructura de talla en relación al PBR (SPR 60%) y por ultimo la línea roja representa la talla actual.
-\normalsize 
-\vspace{0.5cm}
-```
-```{=tex}
-\begin{center}
-\includegraphics[width=0.45\textwidth]{LBPA/Figuras/selectividad_talla-1.pdf}
-\end{center}
-```
-```{=tex}
-\vspace{-0.1cm}
-\small
-\textbf{Figura 22}. Curvas de selectividad y madurez para sardina austral de la Región de Aysén.
-\normalsize 
-\vspace{0.5cm}
-```
-```{=tex}
-\begin{center}
+\begin{figure}[htb!]
+\centering
 \includegraphics[width=0.7\textwidth]{LBPA/Figuras/CurvaSPR-1.pdf}
-\end{center}
+\caption{Rendimiento por Recluta y Biomasa desovante por recluta como una función de la mortalidad por pesca. En este caso el punto rojo representa el F Actual  y el punto verde el F Objetivo al SPR 60\%.}
+\label{Fig20}
+\end{figure}
 ```
+
+
 ```{=tex}
-\vspace{-0.1cm}
-\small
-\textbf{Figura 23}. Rendimiento por Recluta y Biomasa desovante por recluta como una función de la mortalidad por pesca. En este caso el punto rojo representa el F Actual  y el punto verde el F Objetivo al SPR 60\%.
-\normalsize 
-\vspace{0.5cm}
-```
-```{=tex}
-\begin{center}
+\begin{figure}[htb!]
+\centering
 \includegraphics[width=0.7\textwidth]{LBPA/Figuras/Fig_DiagramaFaseXI-1.pdf}
-\end{center}
+\caption{Diagrama de fase de sardina austral de la Región de Aysén. Las líneas verticales segmentadas indican los PBR proxy al máximo rendimiento sostenido y aquel que indica el límite o colapso. La línea segmentada horizontal indica la mortalidad por pesca que permite el máximo rendimiento sostenido.}
+\label{Fig21}
+\end{figure}
 ```
-```{=tex}
-\vspace{-0.1cm}
-\small
-\textbf{Figura 24}. Diagrama de fase de sardina austral de la Región de Aysén. Las líneas verticales segmentadas indican los PBR proxy al máximo rendimiento sostenido y aquel que indica el límite o colapso. La línea segmentada horizontal indica la mortalidad por pesca que permite el máximo rendimiento sostenido.
-\normalsize 
-\vspace{0.5cm}
-```
+
+
+
 \pagebreak
 
 # 5. ANÁLISIS Y DISCUSIÓN
