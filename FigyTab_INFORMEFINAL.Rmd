@@ -214,7 +214,7 @@ plot(year,deplecion,type="o",ylab="Depleción del stock",xlab="Año",ylim=c(0,1)
 
 
 
-```{r Fig7x_InformeFinal,warning=F, include=T, message=F, echo=FALSE,fig.height=6,fig.width=6,fig.align="center",fig.path="Figuras/",dev=fig}
+```{r Fig11_InformeFinal,warning=F, include=T, message=F, echo=FALSE,fig.height=6,fig.width=6,fig.align="center",fig.path="Figuras/",dev=fig}
 
 year<-seq(2012,2020,1)
 biomasa<-c(16669,12608,10088,9655,5874,4371,3473,5372,7498)
