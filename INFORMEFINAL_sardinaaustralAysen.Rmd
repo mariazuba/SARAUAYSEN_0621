@@ -176,7 +176,7 @@ La evaluación de stock de sardina austral en la región de Aysén, se realizó 
 ```{=tex}
 \begin{figure}[htb!]
 \centering
-\includegraphics[width=0.8\textwidth]{Figuras/Fig5_InformeFinal.png}
+\includegraphics[width=0.8\textwidth]{Figuras/Fig5x_InformeFinal-1.pdf}
 \caption{Procedimiento de evaluación de stock de sardina austral Región de Aysén.}
 \label{Fig5}
 \end{figure}
@@ -200,7 +200,7 @@ En el caso particular de sardina austral en la Región de Aysén, por el momento
 ```{=tex}
 \begin{figure}[htb!]
 \centering
-\includegraphics[width=0.8\textwidth]{Figuras/Fig6b.png}
+\includegraphics[width=0.8\textwidth]{Figuras/Fig7_InformeFinal.png}
 \caption{Sistema de niveles para la determinación de los PBRs de acuerdo a la cantidad, tipo y la calidad de la información disponible y, métodos de evaluación de stock empleados en cada pesquería.}
 \label{Fig6}
 \end{figure}
@@ -477,7 +477,7 @@ El estado del recurso se estableció en base a la posición relativa de la morta
 ```{=tex}
 \begin{figure}[htb!]
 \centering
-\includegraphics[width=0.8\textwidth]{Figuras/Fig8_InformeFinal.png}
+\includegraphics[width=0.8\textwidth]{Figuras/Fig8_InformeFinal.pdf}
 \caption{Diagrama de fase definido por el CCT-PP para las pesquerías de pelágicos pequeños.}
 \label{Fig8}
 \end{figure}
@@ -762,8 +762,8 @@ Para la actualización de la evaluación de stock de sardina austral en aguas in
 | 2017   | 3853        |
 | 2018   | 653         |
 | 2019   | 1352        |
-| 2020   | 2819        |
-| \*2021 | 2819        |
+| 2020   | 1839        |
+| \*2021 | 2797        |
 
 : \label{Tab7} Datos de captura usados en cada hito para la evaluación de stock de sardina austral en aguas interiores de la Región de Aysén a través de la metodología de Zhou (2013).
 
@@ -771,58 +771,69 @@ Se presentan las estimaciones de biomasa de sardina austral en la Región de Ays
 
 De acuerdo a los resultados del modelo de evaluación actualizado, la biomasa total (BT) evidenció una importante reducción desde 16,7 mil t al inicio de la serie (2012) hasta 3,4 mil t el año 2018. Este último año, la reducción poblacional, alcanzó un mínimo valor de 21% respecto al año 2012. Los años 2019 y 2020, el stock muestra una recuperación en el nivel de biomasa, presentando un nivel de reducción del 45% respecto de su condición inicial. Desde el inicio de la serie, la tasa de mortalidad por pesca se incrementa considerablemente desde 0,24 año^-1^ hasta de 0.88 año^-1^ el año 2017. Luego se reduce fuertemente hasta 0,19 año^-1^ el 2018 y 0,25 año^-1^ el 2019. Esto, debido a la disminución en el desembarque los últimos años. Durante el año 2020, el nivel de F alcanzaría un valor de 0,38 año^-1^, aunque el último año se basa en un supuesto del nivel de captura.
 
+\pagebreak
+
++------+---------------+--------------+---------------------+--------------------+--------------+-------------+
 | Año  | $BT_{sept20}$ | $BT_{jun21}$ | $BT/B_{0_{sept20}}$ | $BT/B_{0_{jun21}}$ | $F_{sept20}$ | $F_{jun21}$ |
-|------|---------------|--------------|---------------------|--------------------|--------------|-------------|
-| 2012 |               |              |                     |                    |              |             |
-| 2013 |               |              |                     |                    |              |             |
-| 2014 |               |              |                     |                    |              |             |
-| 2015 |               |              |                     |                    |              |             |
-| 2016 |               |              |                     |                    |              |             |
-| 2017 |               |              |                     |                    |              |             |
-| 2018 |               |              |                     |                    |              |             |
-| 2019 |               |              |                     |                    |              |             |
-| 2020 |               |              |                     |                    |              |             |
++======+===============+==============+=====================+====================+==============+=============+
+| 2012 | 16.669        |              | 1,00                |                    | 0,24         |             |
++------+---------------+--------------+---------------------+--------------------+--------------+-------------+
+| 2013 | 12.608        |              | 0,76                |                    | 0,42         |             |
++------+---------------+--------------+---------------------+--------------------+--------------+-------------+
+| 2014 | 10.088        |              | 0,61                |                    | 0,41         |             |
++------+---------------+--------------+---------------------+--------------------+--------------+-------------+
+| 2015 | 9.655         |              | 0,58                |                    | 0,78         |             |
++------+---------------+--------------+---------------------+--------------------+--------------+-------------+
+| 2016 | 5.874         |              | 0,35                |                    | 0,87         |             |
++------+---------------+--------------+---------------------+--------------------+--------------+-------------+
+| 2017 | 4.371         |              | 0,26                |                    | 0,88         |             |
++------+---------------+--------------+---------------------+--------------------+--------------+-------------+
+| 2018 | 3.473         |              | 0,21                |                    | 0,19         |             |
++------+---------------+--------------+---------------------+--------------------+--------------+-------------+
+| 2019 | 5.372         |              | 0,32                |                    | 0,25         |             |
++------+---------------+--------------+---------------------+--------------------+--------------+-------------+
+| 2020 | 7.498         |              | 0,45                |                    | 0,38         |             |
++------+---------------+--------------+---------------------+--------------------+--------------+-------------+
 | 2021 |               |              |                     |                    |              |             |
++------+---------------+--------------+---------------------+--------------------+--------------+-------------+
 
-: Tabla comparativa entre la evaluación preia (septiembre 2020) y el actual análisis (junio 2021). Estimaciones de biomasa (t), mortalidad por pesca (F) y reducción del stock (BT/Bo) para sardina austral en aguas interiores de la región de Aysén entre los años 2012 y 2021 según el método de Zhou *et al*. (2013)
+: Tabla comparativa entre la evaluación previa (septiembre 2020) y el actual análisis (junio 2021). Estimaciones de biomasa (t), mortalidad por pesca (F) y reducción del stock (BT/Bo) para sardina austral en aguas interiores de la región de Aysén entre los años 2012 y 2021 según el método de Zhou *et al*. (2013)
+
+
 
 ```{=tex}
-\begin{center}
-\includegraphics[width=0.7\textwidth]{Figuras/biomasa.png}
-\end{center}
+\begin{figure}[htb!]
+\centering
+\includegraphics[width=0.7\textwidth]{Figuras/Fig1_Zhou2013_biomasa.png}
+\caption{Estimaciones de biomasa total de sardina austral en la Región de Aysén a través de la aplicación del método de Zhou \textit{et al}. (2013) para el período entre 2012 y 2020. La línea negra representa el cuantil del 50\% de la distribución de biomasa proveniente de todas las combinaciones viables para $r$ y $K$. La línea segmentada roja representa el $RMS$ y los puntos azules las capturas observadas. Las líneas de colores muestran las posibles trayectorias de las posibles trayectorias de las biomasas.}
+\label{Fig1_Zhou}
+\end{figure}
 ```
-```{=tex}
-\small
-\textbf{Figura 11}. Estimaciones de biomasa total de sardina austral en la Región de Aysén a través de la aplicación del método de Zhou \textit{et al}. (2013) para el período entre 2012 y 2020. La línea negra representa el cuantil del 50\% de la distribución de biomasa proveniente de todas las combinaciones viables para $r$ y $K$. La línea segmentada roja representa el $RMS$ y los puntos azules las capturas observadas. Las líneas de colores muestran las posibles trayectorias de las posibles trayectorias de las biomasas.
-\vspace{0.5cm} 
-\normalsize
-```
+
 El modelo de evaluación de Zhou *et al*. (2013) fue sensibilizado usando un vector de reducción ($D$) con valores entre 0,4 y 0,8. Los resultados de este análisis de sensibilidad son presentados en la **Figura 12**. En general, a un nivel mayor de reducción las estimaciones de biomasa total se hacen mayores con respecto a aquellas estimaciones con un nivel inferior de reducción y los intervalos de confianza se hacen más amplios. Para este análisis, se consideró como escenario base el nivel de reducción de 0,4.
 
 Otra manera de ver los resultados del análisis de sensibilidad es con respecto a los parámetros estimados como una función de este nivel superior de reducción asumido. La **Figura 13** muestra los diferentes parámetros ($K$, $r$, $RMS$, $D$) en función del nivel superior de reducción. Se aprecia que el parámetro $r$, es estable y muestra poca variación entre cada nivel de $D$ asumida. $K$ por su parte, muestra mayor variación de niveles de $D$ por sobre 0,6. Como es de esperar, la condición del stock para el último año respecto del inicio de la serie es altamente dependiente del nivel de reducción asumido.
 
+
 ```{=tex}
-\begin{center}
-\includegraphics[width=0.7\textwidth]{Figuras/depletion.png}
-\end{center}
+\begin{figure}[htb!]
+\centering
+\includegraphics[width=1\textwidth]{Figuras/Fig2_Zhou2013_depletion.png}
+\caption{Análisis de sensibilidad del método de Zhou \textit{et al}. (2013) para las estimaciones de biomasa total, asumiendo diferentes niveles máximos de reducción del stock. La línea negra representa el cuantil del 50\% de la distribución de biomasa. La línea horizontal segmentada roja representa el RMS y los puntos azules las capturas observadas. Las líneas de colores muestran las posibles trayectorias de las biomasas.}
+\label{Fig2_Zhou}
+\end{figure}
 ```
+
+
 ```{=tex}
-\small
-\textbf{Figura 12}. Análisis de sensibilidad del método de Zhou \textit{et al}. (2013) para las estimaciones de biomasa total, asumiendo diferentes niveles máximos de reducción del stock. La línea negra representa el cuantil del 50\% de la distribución de biomasa. La línea horizontal segmentada roja representa el RMS y los puntos azules las capturas observadas. Las líneas de colores muestran las posibles trayectorias de las biomasas.
-\vspace{0.8cm} 
-\normalsize
+\begin{figure}[htb!]
+\centering
+\includegraphics[width=0.7\textwidth]{Figuras/Fig3_Zhou2013_sensitivity.png}
+\caption{Análisis de sensibilidad del método de Zhou \textit{et al}. (2013) para las estimaciones de los diferentes parámetros en función de un nivel superior de reducción asumido. La línea negra representa el cuantil del 50\% de la estimación para cada parámetro. Las líneas segmentadas representan el cuantil del 25\% y 75\% de las estimaciones.}
+\label{Fig3_Zhou}
+\end{figure}
 ```
-```{=tex}
-\begin{center}
-\includegraphics[width=0.7\textwidth]{Figuras/sensitivity.png}
-\end{center}
-```
-```{=tex}
-\small
-\textbf{Figura 13}. Análisis de sensibilidad del método de Zhou \textit{et al}. (2013) para las estimaciones de los diferentes parámetros en función de un nivel superior de reducción asumido. La línea negra representa el cuantil del 50\% de la estimación para cada parámetro. Las líneas segmentadas representan el cuantil del 25\% y 75\% de las estimaciones.
-\vspace{0.5cm} 
-\normalsize
-```
+
 \pagebreak
 
 ### 4.2.2. Estado de explotación
@@ -859,17 +870,30 @@ Las fuertes variaciones en el estatus, son frecuentes en las pesquerías de pece
 \pagebreak
 \normalsize
 ```
+
+
 ```{=tex}
-\begin{center}
-\includegraphics[width=0.8\textwidth]{Figuras/fase.png}
-\end{center}
+\begin{figure}[htb!]
+\centering
+\includegraphics[width=0.7\textwidth]{Figuras/Fig11_InformeFinal-1.pdf}
+\caption{Series históricas de la razón $B/B_{RMS}$ y $F/F_{RMS}$. Se muestran los puntos biológicos de referencia respectivos en líneas segmentadas horizontales.}
+\label{Fig11}
+\end{figure}
 ```
+
+
 ```{=tex}
-\small
-\textbf{Figura 15}. Diagrama de fase de sardina austral en la Región de Aysén. Las líneas verticales segmentadas indican los PBR al máximo rendimiento sostenido y aquel que indica el límite o colapso. La línea segmentada horizontal indica la mortalidad por pesca que permite el máximo rendimiento sostenido. Se muestra también la incertidumbre asociada al último año de la evaluación. 
-\vspace{0.5cm}
-\normalsize
+\begin{figure}[htb!]
+\centering
+\includegraphics[width=0.7\textwidth]{Figuras/Fig4_Zhou2013_fase.png}
+\caption{Diagrama de fase de sardina austral en la Región de Aysén. Las líneas verticales segmentadas indican los PBR al máximo rendimiento sostenido y aquel que indica el límite o colapso. La línea segmentada horizontal indica la mortalidad por pesca que permite el máximo rendimiento sostenido. Se muestra también la incertidumbre asociada al último año de la evaluación.}
+\label{Fig4_Zhou}
+\end{figure}
 ```
+
+
+
+
 ```{=tex}
 \pagebreak
 \normalsize
