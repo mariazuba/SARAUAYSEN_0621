@@ -12,7 +12,7 @@ header-includes:
 - \usepackage{caption}
 - \captionsetup[table]{name=\textbf{Tabla},labelsep=period}
 - \captionsetup[figure]{name=\textbf{Figura},labelsep=period}
-- \captionsetup{justification=justified,format=plain,font=small,labelfont=bf,margin=60pt}
+- \captionsetup{justification=justified,format=plain,font=small,labelfont=bf,margin=50pt}
 - \pagestyle{fancy}
 - \usepackage{geometry}
 - \geometry{top=1.5cm, bottom=1cm, left=2.5cm, right=2.5cm}
@@ -69,7 +69,7 @@ Proveer la asesoría científica necesaria para la determinación del estado de 
 ```
 # 2. ANTECEDENTES
 
-La sardina austral (*Sprattus fuegensis*), es un pez pelágico de pequeño tamaño presente en el sistema de fiordos y canales del sur de Chile y en la costa sur de Argentina (**Figura 1**). Al igual que otros peces pelágicos pequeños como sardina común y anchoveta, esta especie, muestra importantes fluctuaciones interanuales en su abundancia, lo que redunda en una alta variabilidad en los desembarques. Esta especie presenta un corto ciclo de vida (longevidad máxima de cinco años), un rápido crecimiento y elevada tasa de mortalidad natural. Además, cumple un importante rol trófico, generando fluctuaciones en la abundancia de otras especies que predan sobre ella.
+La sardina austral (*Sprattus fuegensis*), es un pez pelágico de pequeño tamaño presente en el sistema de fiordos y canales del sur de Chile y en la costa sur de Argentina (\textbf{Figura \ref{Fig1}}). Al igual que otros peces pelágicos pequeños como sardina común y anchoveta, esta especie, muestra importantes fluctuaciones interanuales en su abundancia, lo que redunda en una alta variabilidad en los desembarques. Esta especie presenta un corto ciclo de vida (longevidad máxima de cinco años), un rápido crecimiento y elevada tasa de mortalidad natural. Además, cumple un importante rol trófico, generando fluctuaciones en la abundancia de otras especies que predan sobre ella.
 
 ## 2.1. Distribución del recurso y localización del área de estudio
 
@@ -103,7 +103,7 @@ La pesquería se encuentra bajo Régimen Artesanal de Extracción (RAE), sujeta 
 ```
 ## 2.4. Reclutamiento
 
-Por ser una actividad esporádica, el monitoreo de la pesquería es escasa. Se cuenta con unos cuantos muestreos de longitudes que dificulta caracterizar una dinámica mensual. Se distingue la entrada de individuos reclutas a partir de abril (\textbf{Figura \ref{Fig3}})). El crucero de evaluación directa, ha permitido constatar la presencia de ejemplares de pequeño tamaño presentes en aguas interiores de la Región de Aysén en los meses de Abril y Mayo (\textbf{Figura \ref{Fig4}})).
+Por ser una actividad esporádica, el monitoreo de la pesquería es escasa. Se cuenta con unos cuantos muestreos de longitudes que dificulta caracterizar una dinámica mensual. Se distingue la entrada de individuos reclutas a partir de abril (\textbf{Figura \ref{Fig3}}). El crucero de evaluación directa, ha permitido constatar la presencia de ejemplares de pequeño tamaño presentes en aguas interiores de la Región de Aysén en los meses de Abril y Mayo (\textbf{Figura \ref{Fig4}}).
 
 ```{=tex}
 \begin{figure}[h!]
@@ -143,7 +143,7 @@ No existen antecedentes para la Región de Aysén. Sin embrago, para la Región 
 
 : \label{Tab1} Parámetros de crecimiento y mortalidad natural reportados para sardina austral.
 
-## 2.7 Captura Biológicamente Aceptable (CBA)
+## 2.7. Captura Biológicamente Aceptable (CBA)
 
 De acuerdo al ciclo de manejo de esta pesquería, la recomendación de CBA comienza con el cálculo de la CBA inicial que permite al CCT-PP establecer el estatus y recomendar el rango de CBA para el año siguiente. Entre abril y mayo de cada año, el crucero de evaluación hidroacústico permite estimar la abundancia y biomasa de reclutas (crucero de verano), esta información junto a los desembarques es utilizada para actualizar la recomendación inicial de CBA.
 
@@ -442,7 +442,9 @@ Se enfatiza en el hecho que la $F_{RMS}$ es el punto de referencia de biomasa de
 
 \quad
 
-Los puntos biológicos de referencia (PBR) de sardina austral en la Región de Aysén, fueron calculados en base al método basado en las capturas (Zhou *et al*. 2013) y utilizando el modelo de excedentes productivos de Schaefer (1954). Así, la biomasa del rendimiento máximo sostenido (RMS) en el modelo de Schaefer corresponde a $B_{RMS}=K/2$, donde $B_{RMS}$ indica la biomasa del RMS y K corresponde a la capacidad de carga. La mortalidad por pesca de RMS ($F_{RMS}$) se obtiene según $F_{RMS}=r/2$, donde r corresponde a la tasa de crecimiento poblacional. La biomasa límite ($B_{LIM}$) se alcanza a la mitad $B_{RMS}$, y por lo tanto $B_{lím}= B_{RMS}/2$. El RMS se define como $RMS=Kr/4$ (\textbf{Tabla \ref{Tab4}}). \vspace{0.8cm}
+Los puntos biológicos de referencia (PBR) de sardina austral en la Región de Aysén, fueron calculados en base al método basado en las capturas (Zhou *et al*. 2013) y utilizando el modelo de excedentes productivos de Schaefer (1954). Así, la biomasa del rendimiento máximo sostenido (RMS) en el modelo de Schaefer corresponde a $B_{RMS}=K/2$, donde $B_{RMS}$ indica la biomasa del RMS y K corresponde a la capacidad de carga. La mortalidad por pesca de RMS ($F_{RMS}$) se obtiene según $F_{RMS}=r/2$, donde r corresponde a la tasa de crecimiento poblacional. La biomasa límite ($B_{LIM}$) se alcanza a la mitad $B_{RMS}$, y por lo tanto $B_{lím}= B_{RMS}/2$. El RMS se define como $RMS=Kr/4$ (\textbf{Tabla \ref{Tab4}}).
+
+\vspace{0.8cm}
 
 |             RECURSO             | $F_{RMS}$ proxy | $B_{RMS}$ proxy |  $B_{LIM}$  |
 |:-------------------------------:|:---------------:|:---------------:|:-----------:|
@@ -724,17 +726,27 @@ El resultado más relevante del presente análisis se relaciona con el nivel de 
 ```
 \vspace{0.5cm}
 
-| Año  | Biomasa | Depleción |
-|------|---------|-----------|
-| 2013 | 17712   | 1.00      |
-| 2014 | 12394   | 0.70      |
-| 2015 | 11186   | 0.63      |
-| 2016 | 6911    | 0.39      |
-| 2017 | 5161    | 0.29      |
-| 2018 | 4212    | 0.24      |
-| 2019 | 6108    | 0.34      |
-| 2020 | 7933    | 0.45      |
-| 2021 | 8592    | 0.49      |
++------+---------+------------+
+| Año  | Biomasa | Depleción  |
++:====:+:=======:+:==========:+
+| 2013 | 17.712  | 1,00       |
++------+---------+------------+
+| 2014 | 12.394  | 0,70       |
++------+---------+------------+
+| 2015 | 11.186  | 0,63       |
++------+---------+------------+
+| 2016 | 6.911   | 0,39       |
++------+---------+------------+
+| 2017 | 5.161   | 0,29       |
++------+---------+------------+
+| 2018 | 4.212   | 0,24       |
++------+---------+------------+
+| 2019 | 6.108   | 0,34       |
++------+---------+------------+
+| 2020 | 7.933   | 0,45       |
++------+---------+------------+
+| 2021 | 8.592   | 0,49       |
++------+---------+------------+
 
 : \label{Tab6} Biomasa (B) y reducción del stock (D) según la metodología de Hilbor y Mangel (1997) para sardina austral en aguas interiores de la Región de Aysén.
 
@@ -752,22 +764,33 @@ El resultado más relevante del presente análisis se relaciona con el nivel de 
 
 Para la actualización de la evaluación de stock de sardina austral en aguas interiores de la Región de Aysén, respecto del primer hito de evaluación, se actualizó la información de desembarques hasta el año 2020 (valor supuesto) (\textbf{Tabla \ref{Tab7}}). Se consideró además para este análisis un nivel máximo de agotamiento (D) o reducción del stock de la población de 0,5. Este nivel asumido, se basa en la recuperación de las capturas de la flota los últimos meses del año 2019 y los primeros del 2020 y difiere del valor estimado en el actual estudio (0,26) a través de la metodología de Hilborn y Mangel (1997).
 
-| Año    | Desembarque |
-|--------|-------------|
-| 2012   | 4033        |
-| 2013   | 5318        |
-| 2014   | 4163        |
-| 2015   | 7547        |
-| 2016   | 5097        |
-| 2017   | 3853        |
-| 2018   | 653         |
-| 2019   | 1352        |
-| 2020   | 1839        |
-| \*2021 | 2797        |
++----------+-------------+
+| Año      | Desembarque |
++:========:+:===========:+
+| 2012     | 4.033       |
++----------+-------------+
+| 2013     | 5.318       |
++----------+-------------+
+| 2014     | 4.163       |
++----------+-------------+
+| 2015     | 7.547       |
++----------+-------------+
+| 2016     | 5.097       |
++----------+-------------+
+| 2017     | 3.853       |
++----------+-------------+
+| 2018     | 653         |
++----------+-------------+
+| 2019     | 1.352       |
++----------+-------------+
+| 2020     | 1.839       |
++----------+-------------+
+| \*2021   | 2.797       |
++----------+-------------+
 
 : \label{Tab7} Datos de captura usados en cada hito para la evaluación de stock de sardina austral en aguas interiores de la Región de Aysén a través de la metodología de Zhou (2013).
 
-Se presentan las estimaciones de biomasa de sardina austral en la Región de Aysén para el período 2012 al 2020 (**Figura 11**).
+Se presentan las estimaciones de biomasa de sardina austral en la Región de Aysén para el período 2012 al 2020 (\textbf{Figura \ref{Fig11}}).
 
 De acuerdo a los resultados del modelo de evaluación actualizado, la biomasa total (BT) evidenció una importante reducción desde 16,7 mil t al inicio de la serie (2012) hasta 3,4 mil t el año 2018. Este último año, la reducción poblacional, alcanzó un mínimo valor de 21% respecto al año 2012. Los años 2019 y 2020, el stock muestra una recuperación en el nivel de biomasa, presentando un nivel de reducción del 45% respecto de su condición inicial. Desde el inicio de la serie, la tasa de mortalidad por pesca se incrementa considerablemente desde 0,24 año^-1^ hasta de 0.88 año^-1^ el año 2017. Luego se reduce fuertemente hasta 0,19 año^-1^ el 2018 y 0,25 año^-1^ el 2019. Esto, debido a la disminución en el desembarque los últimos años. Durante el año 2020, el nivel de F alcanzaría un valor de 0,38 año^-1^, aunque el último año se basa en un supuesto del nivel de captura.
 
@@ -775,7 +798,7 @@ De acuerdo a los resultados del modelo de evaluación actualizado, la biomasa to
 
 +------+---------------+--------------+---------------------+--------------------+--------------+-------------+
 | Año  | $BT_{sept20}$ | $BT_{jun21}$ | $BT/B_{0_{sept20}}$ | $BT/B_{0_{jun21}}$ | $F_{sept20}$ | $F_{jun21}$ |
-+======+===============+==============+=====================+====================+==============+=============+
++:====:+:=============:+:============:+:===================:+:==================:+:============:+:===========:+
 | 2012 | 16.669        |              | 1,00                |                    | 0,24         |             |
 +------+---------------+--------------+---------------------+--------------------+--------------+-------------+
 | 2013 | 12.608        |              | 0,76                |                    | 0,42         |             |
@@ -797,34 +820,48 @@ De acuerdo a los resultados del modelo de evaluación actualizado, la biomasa to
 | 2021 |               |              |                     |                    |              |             |
 +------+---------------+--------------+---------------------+--------------------+--------------+-------------+
 
+<<<<<<< HEAD
 : Tabla comparativa entre la evaluación previa (septiembre 2020) y el actual análisis (junio 2021). Estimaciones de biomasa (t), mortalidad por pesca (F) y reducción del stock (BT/Bo) para sardina austral en aguas interiores de la región de Aysén entre los años 2012 y 2021 según el método de Zhou *et al*. (2013)
+=======
+: \label{Tab8} Tabla comparativa entre la evaluación previa (septiembre 2020) y el actual análisis (junio 2021). Estimaciones de biomasa (t), mortalidad por pesca (F) y reducción del stock (BT/Bo) para sardina austral en aguas interiores de la región de Aysén entre los años 2012 y 2021 según el método de Zhou *et al*. (2013)
+>>>>>>> 868d79f1218ac3d5946c22e60d51c44bd0718ce7
 
 ```{=tex}
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.7\textwidth]{Figuras/Fig1_Zhou2013_biomasa.png}
 \caption{Estimaciones de biomasa total de sardina austral en la Región de Aysén a través de la aplicación del método de Zhou \textit{et al}. (2013) para el período entre 2012 y 2020. La línea negra representa el cuantil del 50\% de la distribución de biomasa proveniente de todas las combinaciones viables para $r$ y $K$. La línea segmentada roja representa el $RMS$ y los puntos azules las capturas observadas. Las líneas de colores muestran las posibles trayectorias de las posibles trayectorias de las biomasas.}
-\label{Fig1_Zhou}
+\label{Fig11}
 \end{figure}
 ```
+<<<<<<< HEAD
 El modelo de evaluación de Zhou *et al*. (2013) fue sensibilizado usando un vector de reducción ($D$) con valores entre 0,4 y 0,8. Los resultados de este análisis de sensibilidad son presentados en la **Figura 12**. En general, a un nivel mayor de reducción las estimaciones de biomasa total se hacen mayores con respecto a aquellas estimaciones con un nivel inferior de reducción y los intervalos de confianza se hacen más amplios. Para este análisis, se consideró como escenario base el nivel de reducción de 0,4.
 
 Otra manera de ver los resultados del análisis de sensibilidad es con respecto a los parámetros estimados como una función de este nivel superior de reducción asumido. La **Figura 13** muestra los diferentes parámetros ($K$, $r$, $RMS$, $D$) en función del nivel superior de reducción. Se aprecia que el parámetro $r$, es estable y muestra poca variación entre cada nivel de $D$ asumida. $K$ por su parte, muestra mayor variación de niveles de $D$ por sobre 0,6. Como es de esperar, la condición del stock para el último año respecto del inicio de la serie es altamente dependiente del nivel de reducción asumido.
+=======
+El modelo de evaluación de Zhou *et al*. (2013) fue sensibilizado usando un vector de reducción ($D$) con valores entre 0,4 y 0,8. Los resultados de este análisis de sensibilidad son presentados en la \textbf{Figura \ref{Fig12}}. En general, a un nivel mayor de reducción las estimaciones de biomasa total se hacen mayores con respecto a aquellas estimaciones con un nivel inferior de reducción y los intervalos de confianza se hacen más amplios. Para este análisis, se consideró como escenario base el nivel de reducción de 0,4.
+
+Otra manera de ver los resultados del análisis de sensibilidad es con respecto a los parámetros estimados como una función de este nivel superior de reducción asumido. La \textbf{Figura \ref{Fig13}} muestra los diferentes parámetros ($K$, $r$, $RMS$, $D$) en función del nivel superior de reducción. Se aprecia que el parámetro $r$, es estable y muestra poca variación entre cada nivel de $D$ asumida. $K$ por su parte, muestra mayor variación de niveles de $D$ por sobre 0,6. Como es de esperar, la condición del stock para el último año respecto del inicio de la serie es altamente dependiente del nivel de reducción asumido.
+>>>>>>> 868d79f1218ac3d5946c22e60d51c44bd0718ce7
 
 ```{=tex}
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1\textwidth]{Figuras/Fig2_Zhou2013_depletion.png}
 \caption{Análisis de sensibilidad del método de Zhou \textit{et al}. (2013) para las estimaciones de biomasa total, asumiendo diferentes niveles máximos de reducción del stock. La línea negra representa el cuantil del 50\% de la distribución de biomasa. La línea horizontal segmentada roja representa el RMS y los puntos azules las capturas observadas. Las líneas de colores muestran las posibles trayectorias de las biomasas.}
-\label{Fig2_Zhou}
+\label{Fig12}
 \end{figure}
 ```
+<<<<<<< HEAD
+=======
+\pagebreak
+>>>>>>> 868d79f1218ac3d5946c22e60d51c44bd0718ce7
 ```{=tex}
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.7\textwidth]{Figuras/Fig3_Zhou2013_sensitivity.png}
+\includegraphics[width=1\textwidth]{Figuras/Fig3_Zhou2013_sensitivity.png}
 \caption{Análisis de sensibilidad del método de Zhou \textit{et al}. (2013) para las estimaciones de los diferentes parámetros en función de un nivel superior de reducción asumido. La línea negra representa el cuantil del 50\% de la estimación para cada parámetro. Las líneas segmentadas representan el cuantil del 25\% y 75\% de las estimaciones.}
-\label{Fig3_Zhou}
+\label{Fig13}
 \end{figure}
 ```
 \pagebreak
@@ -833,9 +870,27 @@ Otra manera de ver los resultados del análisis de sensibilidad es con respecto 
 
 \quad
 
-Los puntos biológicos de referencia basados en el modelo de evaluación de Zhou *et al*. (2013), indican que la biomasa al máximo rendimiento sostenido corresponde, según el actual análisis a 8,32 mil toneladas, la mortalidad por pesca (F) al máximo rendimiento sostenido es de 0,46 año^-1^ y el rendimiento máximo sostenido estimado por este método debería estar en torno a las 3.85 mil toneladas anuales. Considerando los resultados del último año, donde la biomasa alcanzaría un valor medio en torno a las 7,5 mil t y F un valor de 0,38 año^-1^, el stock se encontraría en el límite inferior del área que define la plena explotación y con un nivel de mortalidad por pesca por debajo del PBR objetivo. En la \textbf{Tabla \ref{Tab8}}, se presentan comparativamente los resultados de junio 2020 con los de la evaluación actual de septiembre de 2020.
+Los puntos biológicos de referencia basados en el modelo de evaluación de Zhou *et al*. (2013), indican que la biomasa al máximo rendimiento sostenido corresponde, según el actual análisis a 8,32 mil toneladas, la mortalidad por pesca (F) al máximo rendimiento sostenido es de 0,46 año^-1^ y el rendimiento máximo sostenido estimado por este método debería estar en torno a las 3.85 mil toneladas anuales. Considerando los resultados del último año, donde la biomasa alcanzaría un valor medio en torno a las 7,5 mil t y F un valor de 0,38 año^-1^, el stock se encontraría en el límite inferior del área que define la plena explotación y con un nivel de mortalidad por pesca por debajo del PBR objetivo. En la \textbf{Tabla \ref{Tab9}}, se presentan comparativamente los resultados de junio 2020 con los de la evaluación actual de septiembre de 2020.
 
-El índice de reducción del stock ($B/B_{RMS}$) (**Figura 14**), muestra para el año 2020 un valor de 0,90, con una probabilidad $p(BD<BD_{RMS}) = 1$ de encontrarse en por debajo del objetivo de manejo ($B_{RMS}$). Esto indica una condición cercana al objetivo de manejo. Sin embargo, aún se encuentra en una situación de de riesgo para el stock, situándose por debajo de la zona de sustentabilidad biológica, con una significativa reducción respecto del nivel observado el año 2012.
+
++-----------+------------+----------+
+| PBR       | Sept-020   | Jun-21   |
++:=========:+:==========:+==========+
+| $RMS$     | 3.853      |          |
++-----------+------------+----------+
+| $B_{RMS}$ | 8317       |          |
++-----------+------------+----------+
+| $F_{RMS}$ | 0,46       |          |
++-----------+------------+----------+
+| $K$       | 16.634     |          |
++-----------+------------+----------+
+| $r$       | 0,93       |          |
++-----------+------------+----------+
+
+: \label{Tab9} Resumen de los PBR para sardina austral en la Región de Aysén a partir del método de Zhou \textit{et al}., (2013)
+
+
+El índice de reducción del stock ($B/B_{RMS}$) (\textbf{Figura \ref{Fig14}}), muestra para el año 2020 un valor de 0,90, con una probabilidad $p(BD<BD_{RMS}) = 1$ de encontrarse en por debajo del objetivo de manejo ($B_{RMS}$). Esto indica una condición cercana al objetivo de manejo. Sin embargo, aún se encuentra en una situación de de riesgo para el stock, situándose por debajo de la zona de sustentabilidad biológica, con una significativa reducción respecto del nivel observado el año 2012.
 
 Los niveles de captura del recurso, habrían excedido el PBR $F_{RMS}$ desde el año 2015, alcanzando un valor máximo de 1,9 veces el $F_{RMS}$ (0,46 año^-1^) el año 2017. Los años 2018 y 2019, considerando la disminución en los niveles de desembarque, la mortalidad por pesca disminuyó hasta alcanzar valores por debajo del nivel de referencia. De acuerdo al valor de $F$ del año 2020, el stock presentaría una probabilidad de 1 de encontrarse por debajo el $F_{RMS}$ $p(F>F_{RMS})$. De esta manera el stock de sardina austral en la Región de Aysén se encontraría en el límite inferior de la plena explotación y con bajos niveles de mortalidad por pesca.
 
@@ -843,35 +898,57 @@ En este informe se utiliza como marco de referencia biológica los PBRs definido
 
 Para construir el diagrama de fase de explotación se utilizan los niveles de biomasa desovante (eje x) y la mortalidad por pesca (eje y) relativos a sus niveles de referencia. El diagrama, incluye la incertidumbre en el valor del último año para ambos indicadores ($B/B_{RMS}$ y $F$).
 
-El diagrama de fases (**Figura 15**) muestra que el stock de sardina austral en la Región de Aysén, se encontraría, durante el año 2019 en una condición de sobre-explotación, con niveles de biomasa por debajo del objetivo, aunque con bajos niveles de F. Se observa que el recurso se localizó en la zona de plena explotación los años 2013 y 2014. Posteriormente, entra en un estado de sobrepesca el año 2015. A partir del año 2016 el recurso habría alcanzado una condición de sobreexplotación ($B<F_{RMS}$).
+El diagrama de fases (\textbf{Figura \ref{Fig15}}) muestra que el stock de sardina austral en la Región de Aysén, se encontraría, durante el año 2019 en una condición de sobre-explotación, con niveles de biomasa por debajo del objetivo, aunque con bajos niveles de F. Se observa que el recurso se localizó en la zona de plena explotación los años 2013 y 2014. Posteriormente, entra en un estado de sobrepesca el año 2015. A partir del año 2016 el recurso habría alcanzado una condición de sobreexplotación ($B<F_{RMS}$).
 
 Las fuertes variaciones en el estatus, son frecuentes en las pesquerías de peces pelágicos pequeños, donde los cambios interanuales en la fuerza de la clase anual reclutada tienen efectos significativos en la condición del recurso evaluado.
 
-\vspace{0.5cm}
-
-|    PBR    | Estimado |
-|:---------:|:--------:|
-|   $RMS$   |   3853   |
-| $B_{RMS}$ |   8317   |
-| $F_{RMS}$ |   0,46   |
-|    $K$    |   16634  |
-|    $r$    |   0,93   |
-
-: \label{Tab8} Resumen de los PBR para sardina austral en la Región de Aysén a partir del método de Zhou \textit{et al}., (2013)
-
-```{=tex}
 \pagebreak
+
+\small
+
++--------------+----------------------+---------------------+----------------------+---------------------+
+| Año          | $F/F_{RMS_{sept20}}$ | $F/F_{RMS_{jun21}}$ | $B/B_{RMS_{sept20}}$ | $B/B_{RMS_{jun21}}$ |
++:============:+:====================:+:===================:+:====================:+:===================:+
+| 2012         | 0,53                 |                     | 2,00                 |                     |
++--------------+----------------------+---------------------+----------------------+---------------------+
+| 2013         | 0,92                 |                     | 1,52                 |                     |
++--------------+----------------------+---------------------+----------------------+---------------------+
+| 2014         | 0,90                 |                     | 1,21                 |                     |
++--------------+----------------------+---------------------+----------------------+---------------------+
+| 2015         | 1,70                 |                     | 1,16                 |                     |
++--------------+----------------------+---------------------+----------------------+---------------------+
+| 2016         | 1,89                 |                     | 0,71                 |                     |
++--------------+----------------------+---------------------+----------------------+---------------------+
+| 2017         | 1,92                 |                     | 0,53                 |                     |
++--------------+----------------------+---------------------+----------------------+---------------------+
+| 2018         | 0,41                 |                     | 0,42                 |                     |
++--------------+----------------------+---------------------+----------------------+---------------------+
+| 2019         | 0,55                 |                     | 0,65                 |                     |
++--------------+----------------------+---------------------+----------------------+---------------------+
+| 2020         | 0,82                 |                     | 0,90                 |                     |
++--------------+----------------------+---------------------+----------------------+---------------------+
+| 2021         |                      |                     |                      |                     |
++--------------+----------------------+---------------------+----------------------+---------------------+
+
+: \label{Tab10} Variación interanual de F respecto de $F_{RMS}$ ($F/F_{RMS}$) y B respecto $B_{RMS}$ ($B/B_{RMS}$). Comparación entre las estimaciones de la evaluación de stock previa (septiembre 2020) y actual (junio 2021).
+
 \normalsize
+<<<<<<< HEAD
 ```
+=======
+
+
+>>>>>>> 868d79f1218ac3d5946c22e60d51c44bd0718ce7
 ```{=tex}
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.7\textwidth]{Figuras/Fig11_InformeFinal-1.pdf}
+\includegraphics[width=0.9\textwidth]{Figuras/Fig11_InformeFinal-1.pdf}
 \caption{Series históricas de la razón $B/B_{RMS}$ y $F/F_{RMS}$. Se muestran los puntos biológicos de referencia respectivos en líneas segmentadas horizontales.}
-\label{Fig11}
+\label{Fig14}
 \end{figure}
 ```
 
+<<<<<<< HEAD
 | Año  | $F/F_{RMS_{sept20}}$ | $F/F_{RMS_{jun21}}$ | $B/B_{RMS_{sept20}}$ | $B/B_{RMS_{jun21}}$ |
 |------|----------------------|---------------------|----------------------|---------------------|
 | 2012 |                      |                     |                      |                     |
@@ -889,18 +966,25 @@ Las fuertes variaciones en el estatus, son frecuentes en las pesquerías de pece
 
 
 
+=======
+\pagebreak
+>>>>>>> 868d79f1218ac3d5946c22e60d51c44bd0718ce7
 ```{=tex}
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.7\textwidth]{Figuras/Fig4_Zhou2013_fase.png}
+\includegraphics[width=1\textwidth]{Figuras/Fig4_Zhou2013_fase.png}
 \caption{Diagrama de fase de sardina austral en la Región de Aysén. Las líneas verticales segmentadas indican los PBR al máximo rendimiento sostenido y aquel que indica el límite o colapso. La línea segmentada horizontal indica la mortalidad por pesca que permite el máximo rendimiento sostenido. Se muestra también la incertidumbre asociada al último año de la evaluación.}
-\label{Fig4_Zhou}
+\label{Fig15}
 \end{figure}
 ```
+<<<<<<< HEAD
 ```{=tex}
 \pagebreak
 \normalsize
 ```
+=======
+
+>>>>>>> 868d79f1218ac3d5946c22e60d51c44bd0718ce7
 \pagebreak
 
 ## 4.3. Objetivo específico 3:
@@ -917,17 +1001,23 @@ Se utiliza la estrategia de explotación referencial de mortalidad por pesca con
 
 La CBA se lleva a cabo bajo un vector de valores (0,75; 1,00; 1,25) multiplicadores del $F_{RMS}$, cuyo segundo valor del vector corresponde al $F_{RMS}$. Se realiza una proyección del stock al año 2021 para estimar la CBA del próximo año.
 
-En la \textbf{Tabla \ref{Tab10}} se resumen los distintos niveles de capturas de sardina austral para la Región de Aysén durante el año 2021. Las estrategias que llevan a la biomasa a la Brms en el corto plazo sugieren para el año 2021 un nivel de captura del orden de las 4,2 mil toneladas para un nivel de mortalidad por pesca igual al Frms (0,46 año-1). Niveles de captura más conservadores, por ejemplo, con F0,75\*$F_{RMS}$. (0,36 año-1) serían del orden de las 3,1 mil toneladas.
+En la \textbf{Tabla \ref{Tab11}} se resumen los distintos niveles de capturas de sardina austral para la Región de Aysén durante el año 2021. Las estrategias que llevan a la biomasa a la Brms en el corto plazo sugieren para el año 2021 un nivel de captura del orden de las 4,2 mil toneladas para un nivel de mortalidad por pesca igual al Frms (0,46 año-1). Niveles de captura más conservadores, por ejemplo, con F0,75\*$F_{RMS}$. (0,36 año-1) serían del orden de las 3,1 mil toneladas.
 
++-------------+----------+----------+----------+
 | Percentiles | F = 0,36 | F = 0,46 | F = 0,58 |
-|-------------|----------|----------|----------|
-| 10%         | 3116     | 4155     | 5193     |
-| 20%         | 3126     | 4169     | 5211     |
-| 30%         | 3134     | 4179     | 5223     |
-| 40%         | 3140     | 4186     | 5233     |
-| 50%         | 3147     | 4196     | 5245     |
++:===========:+:========:+:========:+:========:+
+| 10%         | 3.116    | 4.155    | 5.193    |
++-------------+----------+----------+----------+
+| 20%         | 3.126    | 4.169    | 5.211    |
++-------------+----------+----------+----------+
+| 30%         | 3.134    | 4.179    | 5.223    |
++-------------+----------+----------+----------+
+| 40%         | 3.140    | 4.186    | 5.233    |
++-------------+----------+----------+----------+
+| 50%         | 3.147    | 4.196    | 5.245    |
++-------------+----------+----------+----------+
 
-: \label{Tab10} Captura biológicamente aceptable de sardina austral en la Región de Aysén para el año 2021 para distintos niveles de mortalidad por pesca y bajo diferentes percentiles de captura al RMS.
+: \label{Tab11} Captura biológicamente aceptable de sardina austral en la Región de Aysén para el año 2021 para distintos niveles de mortalidad por pesca y bajo diferentes percentiles de captura al RMS.
 
 ### 4.3.2. Captura Biológicamente Aceptable (CBA) 2021
 
@@ -937,19 +1027,25 @@ Se utiliza la estrategia de explotación referencial de mortalidad por pesca con
 
 La CBA se lleva a cabo bajo un vector de valores (0,75; 1,00; 1,25) multiplicadores del $F_{RMS}$, cuyo segundo valor del vector corresponde al $F_{RMS}$. Se realiza una proyección del stock al año 2021 para estimar la CBA del próximo año.
 
-En la \textbf{Tabla \ref{Tab10b}} se resumen los distintos niveles de capturas de sardina austral para la Región de Aysén durante el año 2021. Las estrategias que llevan a la biomasa a la Brms en el corto plazo sugieren para el año 2021 un nivel de captura del orden de las 4,2 mil toneladas para un nivel de mortalidad por pesca igual al Frms (0,46 año-1). Niveles de captura más conservadores, por ejemplo, con F0,75\*$F_{RMS}$. (0,36 año-1) serían del orden de las 3,1 mil toneladas.
+En la \textbf{Tabla \ref{Tab12}} se resumen los distintos niveles de capturas de sardina austral para la Región de Aysén durante el año 2021. Las estrategias que llevan a la biomasa a la Brms en el corto plazo sugieren para el año 2021 un nivel de captura del orden de las 4,2 mil toneladas para un nivel de mortalidad por pesca igual al Frms (0,46 año-1). Niveles de captura más conservadores, por ejemplo, con F0,75\*$F_{RMS}$. (0,36 año-1) serían del orden de las 3,1 mil toneladas.
 
++-------------+----------+----------+----------+
 | Percentiles | F = 0,36 | F = 0,46 | F = 0,58 |
-|-------------|----------|----------|----------|
++=============+==========+==========+==========+
 | 10%         |          |          |          |
++-------------+----------+----------+----------+
 | 20%         |          |          |          |
++-------------+----------+----------+----------+
 | 30%         |          |          |          |
++-------------+----------+----------+----------+
 | 40%         |          |          |          |
++-------------+----------+----------+----------+
 | 50%         |          |          |          |
++-------------+----------+----------+----------+
 
-: \label{Tab10b} Captura biológicamente aceptable de sardina austral en la Región de Aysén para el año 2021 para distintos niveles de mortalidad por pesca y bajo diferentes percentiles de captura al RMS.
+: \label{Tab12} Captura biológicamente aceptable de sardina austral en la Región de Aysén para el año 2021 para distintos niveles de mortalidad por pesca y bajo diferentes percentiles de captura al RMS.
 
-### 4.3.2 Proyección del stock
+### 4.3.2. Proyección del stock
 
 La **Figura 13** muestra las proyecciones de la biomasa de sardina austral en aguas interiores de la Región de Aysén. Se observa que la mortalidad por pesca igual al $F_{RMS}$ ($F_{RMS}$=0,46 año-1), permitiría llevar la biomasa en un nivel cercano y por sobre al punto biológico de referencia ($B_{RMS}$). En cambio, para aquel valor de mortalidad por pesca superior (0,58 año-1) al $F_{RMS}$ mantienen la biomasa por debajo del rendimiento máximo sostenido.
 
@@ -977,6 +1073,8 @@ iv) En la etapa de revisión y actualización de la EV(t+2) a realizarse en juni
 
 v)  Finalmente, es importante señalar que la evaluación de stock del recurso es realizada separada por zonas: Los Lagos y Aysén en coherencia con los antecedentes de stock diferenciados. La actualización de la evaluación de stock EV(t+2) ha tenidos en los últimos dos años retrasos en la fecha comprometida debido a dificultades operativas del crucero de evaluación directa (principal input para la actualización). Se plantea entonces, comprometer una fecha para la entrega del informe de actualización, con mayor flexibilidad y dependiente de la entrega de los resultados del crucero.
 
+\pagebreak
+
 ### 4.4.2. Resultados preliminares de la implementación de métodos alternativos para determinación de Estatus en sardina austral de la Región de Aysén.
 
 \vspace{0.5cm}
@@ -985,16 +1083,21 @@ v)  Finalmente, es importante señalar que la evaluación de stock del recurso e
 
 \quad
 
+<<<<<<< HEAD
 El período de análisis abarca los años 2006 a 2020. Los índices que se utilizan en este modelo, corresponden a la información de desembarques oficiales (Sernapesca) y biomasa del crucero ($B_{cru}$) de evaluación directa desarrollado por IFOP en aguas interiores de la Región de Aysén (**Figura 16**). \vspace{0.5cm}
+=======
+El período de análisis abarca los años 2006 a 2020. Los índices que se utilizan en este modelo, corresponden a la información de desembarques oficiales (Sernapesca) y biomasa del crucero ($B_{cru}$) de evaluación directa desarrollado por IFOP en aguas interiores de la Región de Aysén (\textbf{Figura \ref{Fig18}}). \vspace{0.5cm}
+>>>>>>> 868d79f1218ac3d5946c22e60d51c44bd0718ce7
 
 ```{=tex}
-\begin{figure}[htb!]
+\begin{figure}[h!]
 \centering
-\includegraphics[width=0.7\textwidth]{SPiCT/Figuras/datos-1.pdf}
+\includegraphics[width=0.5\textwidth]{SPiCT/Figuras/datos-1.pdf}
 \caption{Ajuste a la estructura de tallas de las capturas de sardina austral de la Región de Aysén.}
-\label{Fig13}
+\label{Fig18}
 \end{figure}
 ```
+<<<<<<< HEAD
 La \textbf{Tabla \ref{Tab11}} muestra las estimaciones de los parámetros del modelo con Intervalos de confianza del 95% para el modelo de producción excedentaria. Hay que tener en cuenta que el intervalo de confianza para el parámetro de forma de producción $n$ incluye el simétrico (Schaefer) caso n = 2. De este modelo t, no podemos decir con certeza si la producción de biomasa está sesgada. La capacidad de carga para el stock explotable se prevé que sea aproximadamente 10.02 mil t. para la curva de producción general. Sin embargo, el intervalo de dependencia es extremadamente amplio con un intervalo más bajo de 4300 t. y un intervalo superior de 135 mil t. Claramente, las predicciones del modelo están sufriendo debido a la escasez de datos y quizas a una basica sintonización del modelo. Sin embargo, el modelo proporciona una primera estimación de la abundancia absoluta. Con respecto a las variables de estado calculadas consideran un nivel de biomasas para el ultimo año de mil toneladas aproximadamente. \vspace{0.5cm}
 
 | parámetros   | estimado       | IC inferior   | IC superior   |
@@ -1020,15 +1123,47 @@ La \textbf{Tabla \ref{Tab11}} muestra las estimaciones de los parámetros del mo
 : \label{Tab11} Parámetros estimados del modelo IC 95%, estimación determinista de puntos de referencia y estimación stocástica de puntos de referencia. \normalsize
 
 La **Figura 17** muestra la biomasa absoluta del stock de sardina austral para la Region de Aysén un declive desde el año 2015 cercano a las mil t., pero con un alto grado de incertidumbre de estimación. De la misma manera, el gráfico superior izquierdo muestra un progresivo aumento de la mortalidad por pesca relativa a un eventual objetivo de manejo ($F_{RMS}$). También es posible identificar la trayectoria de la mortalidad por pesca absoluta, que están por sobre un eventual PBR del RMS indicado en la línea negra. Además, se estima para el año 2020 un F en 1.71 año^-1^. Amplios intervalos de confianza como lo indica la zona sombreada de los gráficos para los parámetros estimados y la serie de tiempo de biomasa del proceso de ajuste y sintonización del modelo de evaluación utilizado. El grafico inferior derecho se identifica la curva de producción de la población, en donde es posible identificar que el año 2018 el stock de sardina austral estuvo en su maximo rendimiento a través de la remoción del excedente.
+=======
+La \textbf{Tabla \ref{Tab13}} muestra las estimaciones de los parámetros del modelo con Intervalos de confianza del 95% para el modelo de producción excedentaria. Hay que tener en cuenta que el intervalo de confianza para el parámetro de forma de producción $n$ incluye el simétrico (Schaefer) caso n = 2. De este modelo t, no podemos decir con certeza si la producción de biomasa está sesgada. La capacidad de carga para el stock explotable se prevé que sea aproximadamente 10.02 mil t. para la curva de producción general. Sin embargo, el intervalo de dependencia es extremadamente amplio con un intervalo más bajo de 4300 t. y un intervalo superior de 135 mil t. Claramente, las predicciones del modelo están sufriendo debido a la escasez de datos y quizas a una basica sintonización del modelo. Sin embargo, el modelo proporciona una primera estimación de la abundancia absoluta. Con respecto a las variables de estado calculadas consideran un nivel de biomasas para el ultimo año de mil toneladas aproximadamente. \vspace{0.5cm}
+
+\small
+
+| parámetros   | estimado       | IC inferior     | IC superior   |
+|--------------|----------------|-----------------|---------------|
+| alpha        | 2,00           | 2,00            | 2,00          |
+| beta         | 2,00           | 2,00            | 2,00          |
+| n            | 12             | 11,98           | 12,02         |
+| r            | 6,57           | 1,90            | 22,77         |
+| K            | 10.021         | 2.302           | 43.617        |
+| ------------ | -------------- | -------------   | ------------- |
+| Parámetros   | Determinista   | IC inferior     | IC superior   |
+| ------------ | -------------- | -------------   | ------------- |
+| Bmsy         | 7.994          | 1.837           | 34.797        |
+| Fmsy         | 0,55           | 0,16            | 1,90          |
+| MSY          | 4.380          | 1.184           | 16.201        |
+| ------------ | -------------- | -------------   | ------------- |
+| Parámetros   | Estocástico    | IC inferior     | IC superior   |
+| ------------ | -------------- | --------------- | ------------- |
+| Bmsy         | 6.235          | 1.175           | 33.072        |
+| Fmsy         | 0,39           | 0,06            | 2,46          |
+| MSY          | 2.133          | 365             | 12.475        |
+
+: \label{Tab13} Parámetros estimados del modelo IC 95%, estimación determinista de puntos de referencia y estimación stocástica de puntos de referencia. \normalsize
+
+\normalsize
+
+La \textbf{Figura \ref{Fig19}} muestra la biomasa absoluta del stock de sardina austral para la Region de Aysén un declive desde el año 2015 cercano a las mil t., pero con un alto grado de incertidumbre de estimación. De la misma manera, el gráfico superior izquierdo muestra un progresivo aumento de la mortalidad por pesca relativa a un eventual objetivo de manejo ($F_{RMS}$). También es posible identificar la trayectoria de la mortalidad por pesca absoluta, que están por sobre un eventual PBR del RMS indicado en la línea negra. Además, se estima para el año 2020 un F en 1.71 año^-1^. Amplios intervalos de confianza como lo indica la zona sombreada de los gráficos para los parámetros estimados y la serie de tiempo de biomasa del proceso de ajuste y sintonización del modelo de evaluación utilizado. El grafico inferior derecho se identifica la curva de producción de la población, en donde es posible identificar que el año 2018 el stock de sardina austral estuvo en su maximo rendimiento a través de la remoción del excedente.
+>>>>>>> 868d79f1218ac3d5946c22e60d51c44bd0718ce7
 
 ```{=tex}
-\begin{figure}[htb!]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.7\textwidth]{SPiCT/Figuras/Salidas-1.pdf}
 \caption{Estimaciones SPiCT estimado en sardina austral de (a) la biomasa absoluta, (b) mortalidad por pesca relativa, (c)  mortalidad por pesca absoluta y (d)  curvas de producción derivadas del modelo. Las líneas (azules) indican valores medianos y áreas sombreadas en indicar intervalos de confianza (IC) del 95\%. Líneas negras horizontales denotan PBR de la pesquería.}
-\label{Fig14}
+\label{Fig19}
 \end{figure}
 ```
+<<<<<<< HEAD
 La **Figura 18** muestra la evolución de la biomasa y la mortalidad por pesca desde el año inicial (aquí 2006) indicado con un círculo hasta el año terminal (aquí 2020) indicado con un cuadrado en un esquema de fases.
 
 El diamante amarillo indica la biomasa media durante un largo período si se mantiene la presión pesquera actual (2020). Este punto se puede interpretar como el equilibrio de captura y se denota E (Bo) en la leyenda de la figura como una forma estadística de expresar la expectativa de la biomasa como t=o.
@@ -1036,85 +1171,113 @@ El diamante amarillo indica la biomasa media durante un largo período si se man
 De acuerdo a este diagrama, la pesquería de sardina austral estuvo sometida a bajos niveles de presión pesquera en los primeros años analizados años, por lo cual su estado representado por el diagrama de fase se encuentra en niveles subexplotados. En los años recientes esta situación cambia para pasar a una fase de sobrepesca y sobre explotación.
 
 Una línea roja discontinua vertical en Bt = 0 indica el nivel de biomasa por debajo del cual la población se ha desplomado. Esta pesquería comienza en un estado de vulnerabilidad el año 2006. Es importante visualizarlos conjuntamente ya que los dos puntos de referencia están altamente (negativamente) correlacionados.
+=======
+
+La \textbf{Figura \ref{Fig20}} muestra la evolución de la biomasa y la mortalidad por pesca desde el año inicial (aquí 2006) indicado con un círculo hasta el año terminal (aquí 2020) indicado con un cuadrado en un esquema de fases. El diamante amarillo indica la biomasa media durante un largo período si se mantiene la presión pesquera actual (2020). Este punto se puede interpretar como el equilibrio de captura y se denota E (Bo) en la leyenda de la figura como una forma estadística de expresar la expectativa de la biomasa como t=o.
+
+De acuerdo a este diagrama, la pesquería de sardina austral estuvo sometida a bajos niveles de presión pesquera en los primeros años analizados años, por lo cual su estado representado por el diagrama de fase se encuentra en niveles subexplotados. En los años recientes esta situación cambia para pasar a una fase de sobrepesca y sobre explotación. Una línea roja discontinua vertical en Bt = 0 indica el nivel de biomasa por debajo del cual la población se ha desplomado. Esta pesquería comienza en un estado de vulnerabilidad el año 2006. Es importante visualizarlos conjuntamente ya que los dos puntos de referencia están altamente (negativamente) correlacionados.
+>>>>>>> 868d79f1218ac3d5946c22e60d51c44bd0718ce7
 
 ```{=tex}
-\begin{figure}[htb!]
+\begin{figure}[h!]
 \centering
-\includegraphics[width=0.7\textwidth]{SPiCT/Figuras/Salidas 2-1.pdf}
+\includegraphics[width=0.55\textwidth]{SPiCT/Figuras/Salidas 2-1.pdf}
 \caption{Diagrama de explotación B-F de sardina austral Región de Aysén durante los años 2006 y 2020.}
-\label{Fig15}
+\label{Fig20}
 \end{figure}
 ```
+<<<<<<< HEAD
+=======
+
+>>>>>>> 868d79f1218ac3d5946c22e60d51c44bd0718ce7
 \pagebreak
 
 #### b) LBPA, Length-Based Pseudocohort Analysis (Canales *et al*., 2020)
 
 \quad
 
-La \textbf{Tabla \ref{Tab12}} muestra los parámetros biológicos de sardina austral utilizados en el análisis de pseudocohortes basado en estructuras de tallas. La **Figura 19** muestra el ajuste a la estructura de tallas de las capturas de la flota que opera sobre el stock de sardina austral de la Región de Aysén, el cual logra representar la bimodalidad típica que se observa en estructuras de tallas de peces pelágicos, pero aún con dificultades para representar las modas intermedias (**Figura 20**). En general se observa una baja proporción de individuos adultos sobre los 15 cm LT y una alta proporción de reclutas. El método LBPA tiene como objetivo generar a través de simulaciones las estructuras de tallas que no han estado bajo efectos de la pesca y comparar estas con las estructuras de tallas calculadas en función del SPR objetivo (SPR60%). En la **Figura 21** se comparan la estructura de talla actual, objetivo y sin pesca para evaluar el efecto de la pesquería sobre el recurso. La selectividad estimada por el modelo indica que existe una alta selección de individuos juveniles, bajo la talla media de madurez (**Figura 22**). La **Figura 23** muestra la curva de rendimiento por recluta (YPR) y la biomasa desovante por recluta (SPR) del cual se obtiene los niveles de mortalidad por pesca objetivo y actual para la pesquería de sardina austral de la Región de Aysén. La **Figura 24** muestra el diagrama de fase, donde las líneas verticales representan el SPR objetivo (60%SPRo) y SPR límite y la línea horizontal representa la mortalidad por pesca objetivo (F60%SPR). Al respecto, dada la alta selectividad de individuos bajo la talla de madurez y la baja proporción de individuos adultos, el estatus esperado es sobrepesca y sobre-explotación. No obstante, cabe recordar que los parámetros biológicos utilizados en este análisis corresponden a estimaciones realizadas para sardina austral de la Región de Los Lagos, por lo tanto, estas estimaciones se consideran preliminares hasta contar con información biológica del stock de Aysén.
+La \textbf{Tabla \ref{Tab14}} muestra los parámetros biológicos de sardina austral utilizados en el análisis de pseudocohortes basado en estructuras de tallas. La \textbf{Figura \ref{Fig21}} muestra el ajuste a la estructura de tallas de las capturas de la flota que opera sobre el stock de sardina austral de la Región de Aysén, el cual logra representar la bimodalidad típica que se observa en estructuras de tallas de peces pelágicos, pero aún con dificultades para representar las modas intermedias (\textbf{Figura \ref{Fig22}}). En general se observa una baja proporción de individuos adultos sobre los 15 cm LT y una alta proporción de reclutas. El método LBPA tiene como objetivo generar a través de simulaciones las estructuras de tallas que no han estado bajo efectos de la pesca y comparar estas con las estructuras de tallas calculadas en función del SPR objetivo (SPR60%). En la \textbf{Figura \ref{Fig23}} se comparan la estructura de talla actual, objetivo y sin pesca para evaluar el efecto de la pesquería sobre el recurso. La selectividad estimada por el modelo indica que existe una alta selección de individuos juveniles, bajo la talla media de madurez (\textbf{Figura \ref{Fig24}}). La \textbf{Figura \ref{Fig25}} muestra la curva de rendimiento por recluta (YPR) y la biomasa desovante por recluta (SPR) del cual se obtiene los niveles de mortalidad por pesca objetivo y actual para la pesquería de sardina austral de la Región de Aysén. La \textbf{Figura \ref{Fig26}} muestra el diagrama de fase, donde las líneas verticales representan el SPR objetivo (60%SPRo) y SPR límite y la línea horizontal representa la mortalidad por pesca objetivo (F60%SPR). Al respecto, dada la alta selectividad de individuos bajo la talla de madurez y la baja proporción de individuos adultos, el estatus esperado es sobrepesca y sobre-explotación. No obstante, cabe recordar que los parámetros biológicos utilizados en este análisis corresponden a estimaciones realizadas para sardina austral de la Región de Los Lagos, por lo tanto, estas estimaciones se consideran preliminares hasta contar con información biológica del stock de Aysén.
 
 \vspace{0.5cm}
 
 | Parámetros              | símbolo   | valor fijo    |
 |-------------------------|-----------|---------------|
-| Longitud asintótica     | Loo       | 17.71         |
-| Coeficiente crecimiento | k         | 0.78          |
-| Mortalidad natural      | M         | 0.84          |
-| Relación longitud-peso  | log\_a, b | -4.9636, 2.99 |
-| Longitud de madurez     | L50, L95  | 13.5 - 15 cm  |
-| Período de desove       | dt        | 0.83          |
+| Longitud asintótica     | Loo       | 17,71         |
+| Coeficiente crecimiento | k         | 0,78          |
+| Mortalidad natural      | M         | 0,84          |
+| Relación longitud-peso  | log\_a, b | -4,9636; 2,99 |
+| Longitud de madurez     | L50, L95  | 13,5 - 15 cm  |
+| Período de desove       | dt        | 0,83          |
 | Número de edades        | n\_edad   | 6 años        |
 
+<<<<<<< HEAD
 : \label{Tab12} Parámetros de crecimiento y mortalidad natural .
+=======
+: \label{Tab14} Parámetros de crecimiento y mortalidad natural .
+>>>>>>> 868d79f1218ac3d5946c22e60d51c44bd0718ce7
 
 ```{=tex}
-\begin{figure}[htb!]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.7\textwidth]{LBPA/Figuras/ajuste_tallas-1.pdf}
 \caption{Ajuste a la estructura de tallas de las capturas de sardina austral de la Región de Aysén.}
-\label{Fig16}
-\end{figure}
-```
-```{=tex}
-\begin{figure}[htb!]
-\centering
-\includegraphics[width=0.7\textwidth]{LBPA/Figuras/ajusteTallasAcumuladas-1.pdf}
-\caption{Ajuste a la estructura de tallas acumuladas de las capturas de sardina austral de la Región de Aysén.}
-\label{Fig17}
-\end{figure}
-```
-```{=tex}
-\begin{figure}[htb!]
-\centering
-\includegraphics[width=0.7\textwidth]{LBPA/Figuras/EstatusTallas-1.pdf}
-\caption{Estructuras de tallas calculadas por LBPA. La línea verde representa las tallas sin pesca, la línea amarilla muestra una estructura de talla en relación al PBR (SPR 60\%) y por ultimo la línea roja representa la talla actual.}
-\label{Fig18}
-\end{figure}
-```
-```{=tex}
-\begin{figure}[htb!]
-\centering
-\includegraphics[width=0.7\textwidth]{LBPA/Figuras/selectividad_talla-1.pdf}
-\caption{Curvas de selectividad y madurez para sardina austral de la Región de Aysén.}
 \label{Fig19}
 \end{figure}
 ```
 ```{=tex}
-\begin{figure}[htb!]
+\begin{figure}[h!]
 \centering
-\includegraphics[width=0.7\textwidth]{LBPA/Figuras/CurvaSPR-1.pdf}
-\caption{Rendimiento por Recluta y Biomasa desovante por recluta como una función de la mortalidad por pesca. En este caso el punto rojo representa el F Actual  y el punto verde el F Objetivo al SPR 60\%.}
+\includegraphics[width=0.7\textwidth]{LBPA/Figuras/ajusteTallasAcumuladas-1.pdf}
+\caption{Ajuste a la estructura de tallas acumuladas de las capturas de sardina austral de la Región de Aysén.}
 \label{Fig20}
 \end{figure}
 ```
+<<<<<<< HEAD
+=======
+\pagebreak
+
+>>>>>>> 868d79f1218ac3d5946c22e60d51c44bd0718ce7
 ```{=tex}
-\begin{figure}[htb!]
+\begin{figure}[h!]
 \centering
-\includegraphics[width=0.7\textwidth]{LBPA/Figuras/Fig_DiagramaFaseXI-1.pdf}
-\caption{Diagrama de fase de sardina austral de la Región de Aysén. Las líneas verticales segmentadas indican los PBR proxy al máximo rendimiento sostenido y aquel que indica el límite o colapso. La línea segmentada horizontal indica la mortalidad por pesca que permite el máximo rendimiento sostenido.}
+\includegraphics[width=0.7\textwidth]{LBPA/Figuras/EstatusTallas-1.pdf}
+\caption{Estructuras de tallas calculadas por LBPA. La línea verde representa las tallas sin pesca, la línea amarilla muestra una estructura de talla en relación al PBR (SPR 60\%) y por ultimo la línea roja representa la talla actual.}
 \label{Fig21}
 \end{figure}
 ```
+```{=tex}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7\textwidth]{LBPA/Figuras/selectividad_talla-1.pdf}
+\caption{Curvas de selectividad y madurez para sardina austral de la Región de Aysén.}
+\label{Fig22}
+\end{figure}
+```
+<<<<<<< HEAD
+=======
+\pagebreak
+
+>>>>>>> 868d79f1218ac3d5946c22e60d51c44bd0718ce7
+```{=tex}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7\textwidth]{LBPA/Figuras/CurvaSPR-1.pdf}
+\caption{Rendimiento por Recluta y Biomasa desovante por recluta como una función de la mortalidad por pesca. En este caso el punto rojo representa el F Actual  y el punto verde el F Objetivo al SPR 60\%.}
+\label{Fig23}
+\end{figure}
+```
+```{=tex}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7\textwidth]{LBPA/Figuras/Fig_DiagramaFaseXI-1.pdf}
+\caption{Diagrama de fase de sardina austral de la Región de Aysén. Las líneas verticales segmentadas indican los PBR proxy al máximo rendimiento sostenido y aquel que indica el límite o colapso. La línea segmentada horizontal indica la mortalidad por pesca que permite el máximo rendimiento sostenido.}
+\label{Fig24}
+\end{figure}
+```
+<<<<<<< HEAD
+=======
+
+>>>>>>> 868d79f1218ac3d5946c22e60d51c44bd0718ce7
 \pagebreak
 
 # 5. ANÁLISIS Y DISCUSIÓN
