@@ -37,7 +37,13 @@ header-includes:
 
 # RESUMEN EJECUTIVO
 
-Este documento técnico se enmarca en el contexto del Programa de Mejoramiento Continuo de la Calidad de la Asesoría Científica (PMCCAC) de sardina austral de la Región de Aysén. Se realiza un análisis del modelo data poor utilizado para la determinación del estatus y Captura Biológicamente Aceptable y se exploran dos modelos alternativos. Al respecto, la mayoría de los métodos que se han utilizado para evaluar las poblaciones a escala mundial son métodos de sólo captura, ya que los datos de captura/desembarques son fáciles de obtener. El modelo base actual utilizado para la evaluación de stock de sardina austral de la Región de Aysén corresponde a la aproximación de Zhou *et al*. (2013), el que utiliza solo las capturas para estimar las variables de estado como la biomasa y niveles de mortalidad por pesca (F) que junto a los puntos biológicos de referencia (PBRs) permiten determinar el estatus y calcular la "Captura Biológicamente Aceptable (CBA). No obstante, este método requiere asumir un nivel de reducción del stock para definir el estatus del recurso. Sin estos supuestos es probable que los datos de captura se malinterpreten. En el caso de sardina austral de Aysén se utiliza el método de Hilborn & Mangel (1997) que usa, además de los desembarques, un índice de abundancia relativo, en este caso la biomasa acústica, para aproximarse a los cambios en la pendiente de la biomasa del stock en el tiempo. En términos de reducción, al usar toda la información disponible, los resultados indican que, durante el 2020, el stock estaría reducido hasta un 26% de su condición original el año 2013. No obstante, la actividad de la flota muestra una recuperación importante en sus capturas. Asimismo, a pesar que el año 2020 no se realizó el estudio de evaluación directa en la Región de Aysén, el incremento en la biomasa detectado por el crucero en la Región de Los Lagos, hace suponer un incremento también en el stock del sur (Aysén). Este supuesto se basa en la similitud histórica en la variabilidad del índice acústico en ambas zonas de evaluación. La reducción en el índice acústico el año 2019 fue similar a lo observado en la región de Los Lagos, donde los años 2018 y 2019, se produjo un cambio de escala en los niveles de biomasa del stock respecto de evaluaciones previas. El año 2020 en cambio, en la Región de Los Lagos se apreció un incremento importante en este índice. De esta manera, considerando los antecedentes previos, se utiliza en la metodología de Zhou *et al*. (2013) un nivel máximo de agotamiento (D) o reducción del stock de la población de 0,5. Los resultados obtenidos por el método de Zhou se consideran una aproximación preliminar, ya que las decisiones sobre los supuestos predeterminan el rango de valores de $B/B_{RMS}$ que el modelo "estima" como estado actual. Como parte del programa de mejoramiento continuo se exploran dos métodos de data poor alternativos: a) SPiCT, Stochastic Surplus Production Model in Continuous Time (Peteresen & Berg, 2017), basado en datos de captura y biomasa acústica y b) LBPA, Length-Based Pseudocohort Analysis (Canales *et al*., 2021) basado en datos de la biología (se utilizan parámetros de crecimiento, madurez de sardina austral de la Región de Los Lagos) y pesqueros (estructura de tallas de los años 2015 hasta el 2019) de sardina austral de la Región de Aysén. Ambos métodos generan una estimación de estatus más pesimista respecto al estimado por el método de Zhou *et al*. (2013), principalmente, porque no se utilizaron el supuesto de una posible recuperación del stock asumida desde los datos de captura del último año y del incremento de biomasa acústica de la Región de Los Lagos. Estos resultados se consideran como parte del análisis exploratorio de nuevas fuentes de información, ya que aún existe incertidumbre en la información biológica utilizada, principalmente parámetros de crecimiento, pesos medios y madurez que se asumieron igual a los estimados para la Región de Los Lagos.
+El presente documento corresponde al segundo informe técnico de estatus y Captura Biológicamente Aceptable (CBA) para el año 2021 en la pesquería de sardina austral (*Sprattus fuegensis*) en la Región de Aysén del General Carlos Ibáñez del Campo.
+
+Se usó una aproximación para pesquerías pobres en datos basada en los desembarques totales entre los años 2012 y 2020. Se utiliza también el índice acústico para acercarse al nivel de depleción que mostraría el recurso durante el 2020y 2021. Dicho nivel de depleción es usado como información de entrada en el enfoque de modelación usado para establecer el estatus del recurso y la CBA.
+
+De acuerdo al actual enfoque de modelación, la biomasa de sardina austral en la Región de Aysén, sensibilizada a un supuesto de depleción de 0,5, fue de **7,5** mil toneladas (t) el año 2020, con una reducción hasta un **45%** con respecto al inicio de la evaluación. Los años 2019 y 2020 el stock muestra una recuperación en relación a los bajos niveles de biomasa observados durante los años 2017 y 2018. De acuerdo al diagrama de fases, durante el último año de la evaluación, el stock se encuentra, en términos de biomasa, en el límite inferior de la plena-explotación. La biomasa en el año 2020 se sitúa en un valor de 0,90 de la biomasa relativa al rendimiento máximo sostenido ($B_{RMS}$ = 8,3 mil t.). Sin embargo, la mortalidad por pesca (F) del año 2020 (0,38 año^-1^), está por debajo del nivel que permite obtener el RMS ($F_{RMS}$=0,46 año^-1^). En cuanto a la CBA, con la metodología usada en el presente estudio, el rango de captura para el año 2021 estimada bajo diferentes niveles de mortalidad por pesca podría situarse entre 3,1 mil t y 4,2 mil t.
+
+Se discute que el análisis realizado en este reporte corresponde a una aproximación preliminar, que debería robustecerse conforme se extienda la serie temporal y se recopilen mayores antecedentes de la biología (parámetros de crecimiento, madurez) y pesqueros (estructura de tallas, rendimientos de pesca) del recurso en la Región de Aysén. Por ahora y como una medida precautoria, basados en la incertidumbre del modelo de evaluación de stock y los bajos niveles de desembarque del recurso los últimos años, sería recomendable considerar, para el año en curso, un nivel de captura más cercano al nivel inferior del rango estimado.
 
 ```{=tex}
 \pagebreak
@@ -73,12 +79,14 @@ La sardina austral (*Sprattus fuegensis*), es un pez pelágico de pequeño tama�
 
 ## 2.1. Distribución del recurso y localización del área de estudio
 
-En la costa Pacífico, la sardina austral posee una distribución que se extiende a través del sistema de fiordos y canales del sur de Chile, desde la zona del mar interior de Chiloé hasta el extremo sur del continente (Aranis *et al*., 2007; Cerna *et al*., 2013). Debido a que la pesquería y así, la información se concentra mayoritariamente en la parte norte de su distribución (41º90'S, 43º50'S), se utiliza en la Región de Los Lagos, un modelo estructurado para la evaluación de stock del recurso. En cambio, en la Región de Aysén, debido a la escasa actividad pesquera y reducida información disponible, el estudio se basa en una aproximación para pesquerías pobres en datos (data poor). La principal hipótesis de trabajo, es que existe una población auto-sustentada que recluta, crece y se reproduce en cada área. Esto a pesar que existen antecedentes de flujo de individuos entre la Región de Los Lagos y Aysén (Galleguillos *et al*., 2012; Neira *et al*.,2014). \vspace{0.8cm}
+En la costa Pacífico, la sardina austral posee una distribución que se extiende a través del sistema de fiordos y canales del sur de Chile, desde la zona del mar interior de Chiloé hasta el extremo sur del continente (Aranis *et al*., 2007; Cerna *et al*., 2013). Debido a que la pesquería y así, la información se concentra mayoritariamente en la parte norte de su distribución (41º90'S, 43º50'S), se utiliza en la Región de Los Lagos, un modelo estructurado para la evaluación de stock del recurso. En cambio, en la Región de Aysén, debido a la escasa actividad pesquera y reducida información disponible, el estudio se basa en una aproximación para pesquerías pobres en datos (data poor). La principal hipótesis de trabajo, es que existe una población auto-sustentada que recluta, crece y se reproduce en cada área. Esto a pesar que existen antecedentes de flujo de individuos entre la Región de Los Lagos y Aysén (Galleguillos *et al*., 2012; Neira *et al*.,2014).
+
+\vspace{0.8cm}
 
 ```{=tex}
 \begin{figure}[htb!]
 \centering
-\includegraphics[width=0.6\textwidth]{Figuras/Fig1_InformeFinal.png}
+\includegraphics[width=0.6\textwidth]{Figuras/Fig1.pdf}
 \caption{Distribución de \textit{S. fuegensis} y diferentes unidades de pesquería (Región de Los Lagos y Aysén).}
 \label{Fig1}
 \end{figure}
@@ -176,7 +184,7 @@ La evaluación de stock de sardina austral en la región de Aysén, se realizó 
 ```{=tex}
 \begin{figure}[htb!]
 \centering
-\includegraphics[width=0.8\textwidth]{Figuras/Fig5x_InformeFinal-1.pdf}
+\includegraphics[width=0.8\textwidth]{Figuras/Fig3_ProcEval.pdf}
 \caption{Procedimiento de evaluación de stock de sardina austral Región de Aysén.}
 \label{Fig5}
 \end{figure}
@@ -200,7 +208,7 @@ En el caso particular de sardina austral en la Región de Aysén, por el momento
 ```{=tex}
 \begin{figure}[htb!]
 \centering
-\includegraphics[width=0.8\textwidth]{Figuras/Fig7_InformeFinal.png}
+\includegraphics[width=0.7\textwidth]{Figuras/Fig7_InformeFinal.png}
 \caption{Sistema de niveles para la determinación de los PBRs de acuerdo a la cantidad, tipo y la calidad de la información disponible y, métodos de evaluación de stock empleados en cada pesquería.}
 \label{Fig6}
 \end{figure}
@@ -371,7 +379,7 @@ En la \textbf{Tabla \ref{Tab3}}, se presenta un resumen del acercamiento metodol
 +=========================================+========================================================================================+
 | Área geográfica                         | Aguas interiores Región de Aysén                                                       |
 +-----------------------------------------+----------------------------------------------------------------------------------------+
-| Período de análisis                     | 2012-2021                                                                              |
+| Período de análisis                     | 2012-2020                                                                              |
 +-----------------------------------------+----------------------------------------------------------------------------------------+
 | Información a emplear                   | Desembarque oficial en la Región                                                       |
 +-----------------------------------------+----------------------------------------------------------------------------------------+
@@ -496,7 +504,7 @@ Se provee toda la información y antecedentes recopilados a objeto que los corre
 
 ### 3.3.1. Captura Biológicamente Aceptable (CBA) y proyección del stock
 
-Las estimaciones de CBA y proyecciones de la biomasa se realizarán utilizando el método de Zhou *et al*. (2013) y se llevan a cabo bajo un vector de valores (0,75; 1,0 y 1,25) multiplicadores del $F_{RMS}$, cuyo segundo valor del vector corresponde al $F_{RMS}$. La incertidumbre proviene del error asociado a la estimación de la biomasa, los parámetros $r$ y $K$ se asumen constantes y corresponden a aquellos valores que generan biomasas positivas y consistentes con las capturas observadas. Se realiza una proyección del stock al año 2021 para estimar la CBA del próximo año.
+Las estimaciones de CBA y proyecciones de la biomasa se realizarán utilizando el método de Zhou *et al*. (2013) y se llevan a cabo bajo un vector de valores (0,67; 1,0 y 1,25) multiplicadores del $F_{RMS}$, cuyo segundo valor del vector corresponde al $F_{RMS}$. La incertidumbre proviene del error asociado a la estimación de la biomasa, los parámetros $r$ y $K$ se asumen constantes y corresponden a aquellos valores que generan biomasas positivas y consistentes con las capturas observadas. Se realiza una proyección del stock al año 2021 para estimar la CBA del próximo año.
 
 ## 3.4. Objetivo específico 4:
 
@@ -799,23 +807,23 @@ Se presentan las estimaciones de biomasa de sardina austral en la Región de Ays
 +------+---------------+--------------+---------------------+--------------------+--------------+-------------+
 | Año  | $BT_{sept20}$ | $BT_{jun21}$ | $BT/B_{0_{sept20}}$ | $BT/B_{0_{jun21}}$ | $F_{sept20}$ | $F_{jun21}$ |
 +:====:+:=============:+:============:+:===================:+:==================:+:============:+:===========:+
-| 2012 | 16.669        | 16.850       | 1,00                | 1,01               | 0,24         | 0,24        |
+| 2012 | 16.669        | 16.735       | 1,00                | 1,01               | 0,24         | 0,24        |
 +------+---------------+--------------+---------------------+--------------------+--------------+-------------+
-| 2013 | 12.608        | 12.834       | 0,76                | 0,77               | 0,42         | 0,41        |
+| 2013 | 12.608        | 12.563       | 0,76                | 0,76               | 0,42         | 0,42        |
 +------+---------------+--------------+---------------------+--------------------+--------------+-------------+
-| 2014 | 10.088        | 10.317       | 0,61                | 0,62               | 0,41         | 0,40        |
+| 2014 | 10.088        | 10.136       | 0,61                | 0,61               | 0,41         | 0,41        |
 +------+---------------+--------------+---------------------+--------------------+--------------+-------------+
-| 2015 | 9.655         | 9.846        | 0,58                | 0,59               | 0,78         | 0,77        |
+| 2015 | 9.655         | 9.649        | 0,58                | 0,58               | 0,78         | 0,78        |
 +------+---------------+--------------+---------------------+--------------------+--------------+-------------+
-| 2016 | 5.874         | 6.011        | 0,35                | 0,36               | 0,87         | 0,85        |
+| 2016 | 5.874         | 5.931        | 0,35                | 0,36               | 0,87         | 0,86        |
 +------+---------------+--------------+---------------------+--------------------+--------------+-------------+
-| 2017 | 4.371         | 4.399        | 0,26                | 0,26               | 0,88         | 0,88        |
+| 2017 | 4.371         | 4.449        | 0,26                | 0,27               | 0,88         | 0,87        |
 +------+---------------+--------------+---------------------+--------------------+--------------+-------------+
-| 2018 | 3.473         | 3.526        | 0,21                | 0,21               | 0,19         | 0,19        |
+| 2018 | 3.473         | 3.598        | 0,21                | 0,22               | 0,19         | 0,18        |
 +------+---------------+--------------+---------------------+--------------------+--------------+-------------+
-| 2019 | 5.372         | 5.371        | 0,32                | 0,32               | 0,25         | 0,25        |
+| 2019 | 5.372         | 5.603        | 0,32                | 0,34               | 0,25         | 0,24        |
 +------+---------------+--------------+---------------------+--------------------+--------------+-------------+
-| 2020 | 7.498         | 7.353        | 0,45                | 0,44               | 0,38         | 0,25        |
+| 2020 | 7.498         | 7.798        | 0,45                | 0,47               | 0,38         | 0,24        |
 +------+---------------+--------------+---------------------+--------------------+--------------+-------------+
 
 : \label{Tab8} Tabla comparativa entre la evaluación previa (septiembre 2020) y el actual análisis (junio 2021). Estimaciones de biomasa (t), mortalidad por pesca (F) y reducción del stock (BT/Bo) para sardina austral en aguas interiores de la región de Aysén entre los años 2012 y 2020 según el método de Zhou *et al*. (2013)
@@ -867,15 +875,15 @@ Los puntos biológicos de referencia basados en el modelo de evaluación de Zhou
 +-----------+------------+------------+
 | PBR       | Sept-020   | Jun-21     |
 +:=========:+:==========:+============+
-| $RMS$     | 3.853      |            |
+| $RMS$     | 3.853      | 3.875      |
 +-----------+------------+------------+
-| $B_{RMS}$ | 8317       |            |
+| $B_{RMS}$ | 8.317      | 8.317      |
 +-----------+------------+------------+
-| $F_{RMS}$ | 0,46       |            |
+| $F_{RMS}$ | 0,46       | 0,46       |
 +-----------+------------+------------+
-| $K$       | 16.634     |            |
+| $K$       | 16.634     | 16.634     |
 +-----------+------------+------------+
-| $r$       | 0,93       |            |
+| $r$       | 0,93       | 0,93       |
 +-----------+------------+------------+
 
 : \label{Tab9} Resumen de los PBR para sardina austral en la Región de Aysén a partir del método de Zhou \textit{et al}., (2013)
@@ -901,23 +909,23 @@ Las fuertes variaciones en el estatus, son frecuentes en las pesquerías de pece
 +------+----------------------+---------------------+----------------------+---------------------+
 | Año  | $F/F_{RMS_{sept20}}$ | $F/F_{RMS_{jun21}}$ | $B/B_{RMS_{sept20}}$ | $B/B_{RMS_{jun21}}$ |
 +:====:+:====================:+:===================:+:====================:+:===================:+
-| 2012 | 0,53                 |                     | 2,00                 |                     |
+| 2012 | 0,53                 | 0,52                | 2,00                 | 2,01                |
 +------+----------------------+---------------------+----------------------+---------------------+
-| 2013 | 0,92                 |                     | 1,52                 |                     |
+| 2013 | 0,92                 | 0,91                | 1,52                 | 1,51                |
 +------+----------------------+---------------------+----------------------+---------------------+
-| 2014 | 0,90                 |                     | 1,21                 |                     |
+| 2014 | 0,90                 | 0,89                | 1,21                 | 1,22                |
 +------+----------------------+---------------------+----------------------+---------------------+
-| 2015 | 1,70                 |                     | 1,16                 |                     |
+| 2015 | 1,70                 | 1,69                | 1,16                 | 1,16                |
 +------+----------------------+---------------------+----------------------+---------------------+
-| 2016 | 1,89                 |                     | 0,71                 |                     |
+| 2016 | 1,89                 | 1,86                | 0,71                 | 0,71                |
 +------+----------------------+---------------------+----------------------+---------------------+
-| 2017 | 1,92                 |                     | 0,53                 |                     |
+| 2017 | 1,92                 | 1,87                | 0,53                 | 0,53                |
 +------+----------------------+---------------------+----------------------+---------------------+
-| 2018 | 0,41                 |                     | 0,42                 |                     |
+| 2018 | 0,41                 | 0,39                | 0,42                 | 0,43                |
 +------+----------------------+---------------------+----------------------+---------------------+
-| 2019 | 0,55                 |                     | 0,65                 |                     |
+| 2019 | 0,55                 | 0,52                | 0,65                 | 0,67                |
 +------+----------------------+---------------------+----------------------+---------------------+
-| 2020 | 0,82                 |                     | 0,90                 |                     |
+| 2020 | 0,82                 | 0,51                | 0,90                 | 0,94                |
 +------+----------------------+---------------------+----------------------+---------------------+
 
 : \label{Tab10} Variación interanual de F respecto de $F_{RMS}$ ($F/F_{RMS}$) y B respecto $B_{RMS}$ ($B/B_{RMS}$). Comparación entre las estimaciones de la evaluación de stock previa (septiembre 2020) y actual (junio 2021).
@@ -954,26 +962,26 @@ Las fuertes variaciones en el estatus, son frecuentes en las pesquerías de pece
 
 A partir del modelo conceptual de la dinámica del stock de sardina austral en aguas interiores Chiloé, se desarrolló el enfoque y modelo de evaluación que permite asesorar al Comité Científico Técnico de Pesquerías de Pelágicos Pequeños (CCT--PP) en el análisis de las posibilidades de explotación del stock, considerando los parámetros e indicadores estimados por el modelo de evaluación y su incertidumbre asociada.
 
-Se utiliza la estrategia de explotación referencial de mortalidad por pesca constantes F=Frms para la cual se presentaron las capturas asociadas y los percentiles de riesgo (10%-50%) de exceder el nivel de explotación evaluado. La mortalidad por pesca de referencia es aquella que permite alcanzar el rendimiento máximo sostenido, consistente con los puntos biológicos de referencia ($F_{RMS}$).
+Se utiliza la estrategia de explotación referencial de mortalidad por pesca constantes $F=F_{RMS}$ para la cual se presentaron las capturas asociadas y los percentiles de riesgo (10%-50%) de exceder el nivel de explotación evaluado. La mortalidad por pesca de referencia es aquella que permite alcanzar el rendimiento máximo sostenido, consistente con los puntos biológicos de referencia ($F_{RMS}$).
 
-La CBA se lleva a cabo bajo un vector de valores (0,75; 1,00; 1,25) multiplicadores del $F_{RMS}$, cuyo segundo valor del vector corresponde al $F_{RMS}$. Se realiza una proyección del stock al año 2021 para estimar la CBA del próximo año.
+La CBA se lleva a cabo bajo un vector de valores (0,67; 1,00; 1,25) multiplicadores del $F_{RMS}$, cuyo segundo valor del vector corresponde al $F_{RMS}$. Se realiza una proyección del stock al año 2021 para estimar la CBA inicial.
 
-En la \textbf{Tabla \ref{Tab11}} se resumen los distintos niveles de capturas de sardina austral para la Región de Aysén durante el año 2021. Las estrategias que llevan a la biomasa a la Brms en el corto plazo sugieren para el año 2021 un nivel de captura del orden de las 4,2 mil toneladas para un nivel de mortalidad por pesca igual al Frms (0,46 año-1). Niveles de captura más conservadores, por ejemplo, con F0,75\*$F_{RMS}$. (0,36 año-1) serían del orden de las 3,1 mil toneladas.
+En la \textbf{Tabla \ref{Tab11}} se resumen los distintos niveles de capturas de sardina austral para la Región de Aysén durante el año 2021. Las estrategias que llevan a la biomasa a la $B_{RMS}$ en el corto plazo sugieren para el año 2021 un nivel de captura del orden de las 4,2 mil toneladas para un nivel de mortalidad por pesca igual al $F_{RMS}$ (0,46 año^-1^). Niveles de captura más conservadores, por ejemplo, con F0,67\*$F_{RMS}$. (0,31 año^-1^) serían del orden de las 2,8 mil toneladas.
 
 \vspace{0.5cm}
 
 +-------------+----------+----------+----------+
-| Percentiles | F = 0,36 | F = 0,46 | F = 0,58 |
+| Percentiles | F = 0,31 | F = 0,46 | F = 0,58 |
 +:===========:+:========:+:========:+:========:+
-| 10%         | 3.116    | 4.155    | 5.193    |
+| 10%         | 2.770    | 4.155    | 5.193    |
 +-------------+----------+----------+----------+
-| 20%         | 3.126    | 4.169    | 5.211    |
+| 20%         | 2.779    | 4.169    | 5.211    |
 +-------------+----------+----------+----------+
-| 30%         | 3.134    | 4.179    | 5.223    |
+| 30%         | 2.786    | 4.179    | 5.223    |
 +-------------+----------+----------+----------+
-| 40%         | 3.140    | 4.186    | 5.233    |
+| 40%         | 2.791    | 4.186    | 5.233    |
 +-------------+----------+----------+----------+
-| 50%         | 3.147    | 4.196    | 5.245    |
+| 50%         | 2.797    | 4.196    | 5.245    |
 +-------------+----------+----------+----------+
 
 : \label{Tab11} Captura biológicamente aceptable de sardina austral en la Región de Aysén para el año 2021 para distintos niveles de mortalidad por pesca y bajo diferentes percentiles de captura al RMS.
@@ -986,26 +994,26 @@ En la \textbf{Tabla \ref{Tab11}} se resumen los distintos niveles de capturas de
 
 A partir del modelo conceptual de la dinámica del stock de sardina austral en aguas interiores Chiloé, se desarrolló el enfoque y modelo de evaluación que permite asesorar al Comité Científico Técnico de Pesquerías de Pelágicos Pequeños (CCT--PP) en el análisis de las posibilidades de explotación del stock, considerando los parámetros e indicadores estimados por el modelo de evaluación y su incertidumbre asociada.
 
-Se utiliza la estrategia de explotación referencial de mortalidad por pesca constantes F=Frms para la cual se presentaron las capturas asociadas y los percentiles de riesgo (10%-50%) de exceder el nivel de explotación evaluado. La mortalidad por pesca de referencia es aquella que permite alcanzar el rendimiento máximo sostenido, consistente con los puntos biológicos de referencia ($F_{RMS}$).
+Se utiliza la estrategia de explotación referencial de mortalidad por pesca constantes $F=F_{RMS}$ para la cual se presentaron las capturas asociadas y los percentiles de riesgo (10%-50%) de exceder el nivel de explotación evaluado. La mortalidad por pesca de referencia es aquella que permite alcanzar el rendimiento máximo sostenido, consistente con los puntos biológicos de referencia ($F_{RMS}$).
 
-La CBA se lleva a cabo bajo un vector de valores (0,75; 1,00; 1,25) multiplicadores del $F_{RMS}$, cuyo segundo valor del vector corresponde al $F_{RMS}$. Se realiza una proyección del stock al año 2021 para estimar la CBA del próximo año.
+La CBA se lleva a cabo bajo un vector de valores (0,67; 1,00; 1,25) multiplicadores del $F_{RMS}$, cuyo segundo valor del vector corresponde al $F_{RMS}$. Se realiza una proyección del stock al año 2021 para estimar la CBA actualizada.
 
-En la \textbf{Tabla \ref{Tab12}} se resumen los distintos niveles de capturas de sardina austral para la Región de Aysén durante el año 2021. Las estrategias que llevan a la biomasa a la Brms en el corto plazo sugieren para el año 2021 un nivel de captura del orden de las 4,2 mil toneladas para un nivel de mortalidad por pesca igual al Frms (0,46 año-1). Niveles de captura más conservadores, por ejemplo, con F0,75\*$F_{RMS}$. (0,36 año-1) serían del orden de las 3,1 mil toneladas.
+En la \textbf{Tabla \ref{Tab12}} se resumen los distintos niveles de capturas de sardina austral para la Región de Aysén durante el año 2021. Las estrategias que llevan a la biomasa a la $B_{RMS}$ en el corto plazo sugieren para el año 2021 un nivel de captura del orden de las 4,6 mil toneladas para un nivel de mortalidad por pesca igual al $F_{RMS}$ (0,46 año^-1^). Niveles de captura más conservadores, por ejemplo, con F0,67\*$F_{RMS}$. (0,31 año^-1^) serían del orden de las 3,1 mil toneladas.
 
 \vspace{0.5cm}
 
 +-------------+----------+----------+----------+
-| Percentiles | F = 0,36 | F = 0,46 | F = 0,58 |
+| Percentiles | F = 0,31 | F = 0,46 | F = 0,58 |
 +=============+==========+==========+==========+
-| 10%         |          |          |          |
+| 10%         | 3.081    | 4.621    | 5.776    |
 +-------------+----------+----------+----------+
-| 20%         |          |          |          |
+| 20%         | 3.088    | 4.632    | 5.790    |
 +-------------+----------+----------+----------+
-| 30%         |          |          |          |
+| 30%         | 3.098    | 4.647    | 5.808    |
 +-------------+----------+----------+----------+
-| 40%         |          |          |          |
+| 40%         | 3.104    | 4.655    | 5.819    |
 +-------------+----------+----------+----------+
-| 50%         |          |          |          |
+| 50%         | 3.109    | 4.663    | 5.829    |
 +-------------+----------+----------+----------+
 
 : \label{Tab12} Captura biológicamente aceptable de sardina austral en la Región de Aysén para el año 2021 para distintos niveles de mortalidad por pesca y bajo diferentes percentiles de captura al RMS.
@@ -1223,6 +1231,33 @@ La \textbf{Tabla \ref{Tab14}} muestra los parámetros biológicos de sardina aus
 \pagebreak
 
 # 5. ANÁLISIS Y DISCUSIÓN
+
+
+## 5.1 Datos de entrada
+
+El análisis contenido en el presente informe, corresponde a la evaluación de stock de sardina austral en la Región de Aysén hasta el año 2020 y CBA para el año 2021. Se considera información completa de los desembarques a diciembre de 2019 y un supesto de captura para el 2020 equivalente a cuota de captura establecida pare el año en curso.
+
+La disminución en los indicadores poblacionales hasta el año 2018, es coherente con la reducción en los desembarques a partir año 2015. La misma situación se observó en el índice acústico hasta el año 2019. Esta reducción en el índice acústico, fue similar a lo observado en la región de Los Lagos, donde los años 2018 y 2019, se produjo un cambio de escala en los niveles de biomasa del stock respecto de evaluaciones previas. El año 2020 en cambio en la Región de Los Lagos se apreció un incremento importante en este índice
+La biomasa acústica disminuyó desde 45 mil t el año 2016 hasta 24,8 mil t el 2018 y 6,6 mil t en el 2019. Este último valor fue el más bajo de toda la serie. El crucero del año 2020, no se llevó a cabo debido a la reasignación de recursos por parte de la Subsecretaría de Pesca para bordar otras materias de interés en esta pesquería. Sin embargo, considerando los resultados del estudio en la zona norte (Los Lagos), es probable que en la zona de Aysén, también se haya manifestado un aumento en la biomasa del stock. Esto considerando la recuperación en los desembarques durante la ultima parte del año 2019 y la primera mitad del 2020.
+Los años 2018 y 2019, las cifras de desembarques oficiales de sardina austral en la Región de Aysén fueron los mínimos de toda la serie, disminuyendo desde niveles promedio de 4,5 mil toneladas entre el 2012 y 2017 hasta 650 t el 2018 y 1,3 mil t el 2019. Se espera sin embrago, que durante el 2020 tales niveles incrementen y alcancen valores cercanos a las 2,9 mil t.
+
+## 5.2 Indicadores del stock
+
+La biomasa estimada por el actual modelo de evaluación, se redujo significativamente desde 16,7 mil t, el año 2012 hasta 3,5 mil t, el año 2018. La mortalidad por pesca (F) en tanto aumentó desde 0,24 año^-1^ al principio de la serie hasta 0.88 año^-1^ los años 2016 y 2017. Luego, producto de la reducción en las remociones, la mortalidad por pesca disminuye hasta valores por del debajo de la referencia ($F_{RMS}$= 0,46 año-1).
+
+La razón $B/B_{RMS}$, presentó una relación inversa y proporcional a los niveles de mortalidad por pesca (F) aplicados sobre la pesquería. El indicador, muestra una condición positiva, con valores por sobre el objetivo Biológico de Referencia $B_{RMS}$ hasta el 2015 y alcanza la biomasa límite el año 2018. A partir del año 2019 muestra una recuperación hasta 0.90 $B_{RMS}$ el año 2020.
+
+De acuerdo al modelo base utilizado, los resultados del análisis, señalan que el recurso en aguas interiores de la Región de Aysén, durante el año 2020, se encontraría por debajo del objetivo de manejo en términos de biomasa ($B>B_{RMS}$), auqnue con bajos niveles de F. El estatus del recurso, estimado a través de la metodología de Zhou *et al*., (2013), lo sitúa en límite inferior de la zona de plena-explotación, con niveles de F por debajo de $F_{RMS}$ ($F< F_{RMS}$). Se utilizó para el presente análisis un nivel máximo de agotamiento (D) o reducción del stock de la población de 0,5. Este nivel de reducción corresponde a un valor diferente al utilizado en la evaluación previa (0,4) y se justifica por la recuperación de la actividad pesquera en la zona de análisis y los resultados del crucero de evaluación directa en la Región de Los Lagos que mostró uno de los niveles más altos de la serie.
+
+A pesar que los resultados del presente análisis están fuertemente limitados por la corta serie temporal, se considera que, además de la pesca, posibles cambios en las condiciones el hábitat en la Regiones de Aysén y Los Lagos, podrían haber afectado de igual manera los reclutamientos durante los años 2017 y 2018, incidiendo en la productividad del stock en ambas zonas.
+
+
+## 5.3 Captura Biológicamente Aceptable (CBA)
+
+El rango de captura para el año 2021 para percentiles de probabilidad entre el 10% y 50%, podría situarse entre 3,1 mil t y 4,2 mil t. para niveles de mortalidad por pesca de 0,75* $F_{RMS}$ y $F_{RMS}$ respectivamente. Sin embargo, considerando la condición del recurso en los últimos años, es recomendable basarse en el enfoque precautorio y considerar un nivel de captura más cercano al nivel inferior del rango estimado.
+
+
+## 5.4. Exploración de métodos alternativos para determinación del estatus
 
 El Programa de Mejoramiento Continuo de la Calidad de Asesoría Científica (PMCCAC), se enfoca en sintetizar las brechas de datos, información y conocimiento en relación con la situación general de una pesquería y de esta forma una sistematización para el desarrollo continuo de la asesoría científica.
 
