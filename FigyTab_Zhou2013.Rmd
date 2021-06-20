@@ -104,7 +104,7 @@ sim1=function(k25=k25,k75=k75,r25=r25,r75=r75,yr=yr,C=C,nsim=nsim,msy=NULL){
 #
 #####################################################################
 # input catch data and r range for sautral XI stock 
-C=c(4033,5318,4163,7547,5097,3853,653,1352,2819)
+C=c(4033,5318,4163,7547,5097,3853,653,1352,1839)
 yr=seq(2012,2020)
 r.lci=0.85;
 r.uci=1.2
@@ -456,15 +456,17 @@ BB   <-expression(paste("Biomasa (mil t)",sep=""))
 Binf <-tabla[2,1]/2
 Bsup <-tabla[4,1]/2
 rng1 <-range(BT[,,],na.rm=T)
-ax2  <-seq(0,rng1[2]*1.15,by=2500)
+ax2  <-seq(0,rng1[2]*1.15,by=1500)
 cols <-"#858585"
 y1   <-length(yrs_pro)
+xxxx<-matrix(ncol=3,nrow=11)
 
 par(mar=c(5,5,1,1),cex.axis=1,cex.lab=1)
-plot(yrs_pro[-2],seq(0,rng1[2]*1.15,le=(y1-1)),col=0,type="l",xlab="",ylab="",yaxt="n",ylim=c(0,rng1[2]*0.98))
+plot(yrs_pro[-2],seq(0,rng1[2]*1.15,le=(y1-1)),col=0,type="o",xlab="",ylab="",yaxt="n",ylim=c(0,rng1[2]*0.98),xaxp=c(2020,2032,12))
 
 for(x in 1:length(Fi)){
- lines(yrs_pro[-2],apply(BT[x,,],2,quantile)[3,-2],col=x,lty=2,lwd=2)
+  xxxx[,x]<-apply(BT[x,,],2,quantile)[3,-2]
+ lines(yrs_pro[-2],xxxx[,x],col=x,lty=2,lwd=2)
 }
 abline(h=Bmrs,lty=2,lwd=2,col=cols)
 axis(2,at=ax2,labels=ax2/1000,las=1,cex=1)
@@ -474,7 +476,7 @@ legend(2021,rng1[2]*0.5,c(expression(F[paste("0.35")]),expression(F[paste("0.46"
 expression(F[paste("0.58")])),lty=c(2,2,2,2,2),lwd=c(2,2,2,2,2),cex=1.4,
 col=c(1,2,3),bty="n")
 
-
+xxxx
 ```
 
 ```{r Fig6_Zhou2013_capturas,eval=T,warning=F, include=T, message=F, echo=T,fig.height=5,fig.width=5,fig.align="center",fig.path="Figuras/",dev="pdf"}
@@ -490,7 +492,7 @@ ax3  <-seq(0,rng2[2]*1.15,by=1000)
 xxxx<-matrix(ncol=3,nrow=11)
 
 par(mar=c(5,5,1,1),cex.axis=1,cex.lab=1)
-plot(yrs_pro[-2],seq(0,rng2[2]*1.15,le=11),col=0,type="l",xlab="",ylab="",yaxt="n",ylim=c(0,rng2[2]*0.95))
+plot(yrs_pro[-2],seq(0,rng2[2]*1.15,le=11),col=0,type="o",xlab="",ylab="",yaxt="n",ylim=c(0,rng2[2]*0.95),xaxp=c(2020,2032,12))
 
 for(x in 1:length(Fi)){
   xxxx[,x]<-apply(CT[x,,],2,quantile)[3,-2]
@@ -500,8 +502,8 @@ abline(h=MRS,lty=2,lwd=2,col=cols)
 axis(2,at=ax3,labels=sprintf("%0.0f",ax3/1000),las=1,cex=1.4)
 mtext(CC,side=2,line=3.5,cex=1.2)
 mtext("Años",side=1,line=3.4,cex=1.2)
-legend(2021,rng2[2]*0.5,c(expression(F[paste("0.35")]),expression(F[paste("0.46")]),
-expression(F[paste("0.58")])),lty=c(2,2,2,2,2),lwd=c(2,2,2,2,2),cex=1.4,
+legend(2021,rng2[2]*0.5,c(expression(F[paste("0,31")]),expression(F[paste("0,46")]),
+expression(F[paste("0,58")])),lty=c(2,2,2,2,2),lwd=c(2,2,2,2,2),cex=1.4,
 col=c(1,2,3),bty="n")
 
 
