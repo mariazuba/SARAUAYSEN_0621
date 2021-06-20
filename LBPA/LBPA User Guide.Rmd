@@ -123,9 +123,9 @@ Lets plot length structure from data and get a plot from all length set data ava
 
 ```{r ajuste_tallas, echo=FALSE, fig.align="center", fig.cap= "Set of Length data with model fit", fig.width=6, fig.height=6, fig.path="Figuras/", dev="pdf"}
 
-year<-c(2015, 2016, 2017, 2018,2019)
+year<-c(2015, 2016, 2017, 2018,2019,2020)
 par(mfrow=c(3,2),mar=c(3,4,1,1)+1)
-for(i in 1:5){
+for(i in 1:6){
     plot(BinLen, ObsFre[i,],type="s", xlab="Tallas (cm)", ylab="Densidad") 
     lines(BinLen, PredFre, type="l", col=2)
     abline(v=13, col=2, lwd=2)
@@ -148,7 +148,7 @@ Catch at length
 
 ```{r eval=FALSE}
 par(mfrow=c(3,4),mar=c(3,4,1,1)+1)
-for(i in 1:5){
+for(i in 1:6){
   plot(BinLen ,CatchLFre[i,],ylab="",
        xlab="Length",type="h",lwd=2, col="gray",
        xlim = c(0,25))

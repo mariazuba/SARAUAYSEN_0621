@@ -1,10 +1,10 @@
-# Number of parameters = 3 Objective function value = 21680.8918619289  Maximum gradient component = 1.93363278100378e-06
+# Number of parameters = 3 Objective function value = 26093.8895592884  Maximum gradient component = 1147.76351711431
 # log_Fcr:
-0.378209789355
+0.532715164570
 # log_L50:
-2.25864171343
+2.27521755043
 # log_rango:
-0.315213601985
+0.304606566496
 # log_alfa:
 -6.89780494813
 # log_beta:
