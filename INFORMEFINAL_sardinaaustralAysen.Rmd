@@ -936,7 +936,7 @@ Las fuertes variaciones en el estatus, son frecuentes en las pesquerías de pece
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\textwidth]{Figuras/Fig11_InformeFinal-1.pdf}
-\caption{Series históricas de la razón $B/B_{RMS}$ y $F/F_{RMS}$. Se muestran los puntos biológicos de referencia respectivos en líneas segmentadas horizontales.}
+\caption{Series históricas de la razón $B/B_{RMS}$ y $F/F_{RMS}$, estimadas en la asesoría de septiembre 2020 y junio 2021. Se muestran los puntos biológicos de referencia respectivos en líneas segmentadas horizontales.}
 \label{Fig14}
 \end{figure}
 ```
