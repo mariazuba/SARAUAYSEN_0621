@@ -104,7 +104,7 @@ sim1=function(k25=k25,k75=k75,r25=r25,r75=r75,yr=yr,C=C,nsim=nsim,msy=NULL){
 #
 #####################################################################
 # input catch data and r range for sautral XI stock 
-C=c(4033,5318,4163,7547,5097,3853,653,1352,1839)
+C=c(4033,5318,4163,7547,5097,3853,653,1352,2819)
 yr=seq(2012,2020)
 r.lci=0.85;
 r.uci=1.2
@@ -156,7 +156,7 @@ all=all[!is.na(all[,2]),]
 all$msy=all[,1]*all[,2]/4 
 # estimate reference points
 #cutoff=ifelse(tail(C,1)/max(C)<=0.5,0.5,0.8)
-all2     =all[!is.na(all$r) & all$d <= 0.45,]#cutoff,assume upper depeltion=0.4
+all2     =all[!is.na(all$r) & all$d <= 0.50,]#cutoff,assume upper depeltion=0.4
 quan1    =apply(all2,2,quantile)
 k25      =quan1[,1][2];k75=quan1[,1][4]
 r25      =quan1[,2][2];r75=quan1[,2][4]
@@ -377,7 +377,7 @@ side=1,line=4.2,cex=1.2)
 mtext(expression(paste("Mortalidad por pesca relativa a ",F[paste("RMS")],
 sep="")),side=2,line=3.8,cex=1.2)
 #a2<-which(yr%in%seq(2015,1994,by=-2)==TRUE)
-a2<-c(1,2,3,4,5,6,7,8,9,10)
+a2<-c(1,2,3,4,5,6,7,8,9)
 text(X1[a2],Y1[a2]*1.06,yr[a2],cex=1,pos=4,col=4)
 #text(1.10,0.83,"Plena Explotación",cex=1.6,pos=4,col=1,lwd=2)
 #text(1.56,0.31,"Sub Explotación",cex=1.6,pos=4,col=1,lwd=2)
@@ -410,7 +410,7 @@ for(p in 1:mm){
   colnames(mate)<-c("k","r","msy","Bend","Depletion")
 
 yy      <-length(yr)
-prob    <-c(0.75,1.00,1.25)
+prob    <-c(0.6666667,1.00,1.25) # pnderadores de Frms
 ss      <-dim(sp)
 yrs_pro <-seq(yr[yy],yr[yy]+11,by=1) # años de proyección
 yyp     <-length(yrs_pro)
@@ -421,19 +421,20 @@ BT[,,1] <-Bioma[3,yy]
 CT[,,1] <-C[yy]
 Fi      <-Fmrs*prob
 
-# y Frms ponderados
-# n simulaciones???
-# m años de proyección
-for(y in 1:length(Fi)){
+# y = Frms ponderados
+# n = número de simulaciones
+# m = años de proyección
+
+for(y in 1:length(Fi)){ 
  for(n in 1:ss[1]){
-  ki=sp$k[n]
-  ri=sp$r[n]
-  for(m in 1:(yyp-1)){
-   if(m==1){ # igual a la captura del último año
-     CT[y,,1]=C[yy]} 
+  ki=sp$k[n] # parámetro K simulado
+  ri=sp$r[n] # parámetro r simulado
+  for(m in 1:(yyp-1)){ # PROYECCIÓN
+   if(m==1){ 
+     CT[y,,1]=C[yy]} # igual a la captura del último año
     else {
-      CT[y,n,m]=BT[y,n,m]*Fi[y]}
-      BT[y,n,m+1]=BT[y,n,m]+ri*BT[y,n,m]*(1-BT[y,n,m]/ki)-CT[y,n,m]
+      CT[y,n,m]=BT[y,n,m]*Fi[y]} # captura proyectada
+      BT[y,n,m+1]=BT[y,n,m]+ri*BT[y,n,m]*(1-BT[y,n,m]/ki)-CT[y,n,m] # biomasa total proyectada
    if(m==(yyp-1)){
      CT[y,n,m+1]=BT[y,n,m+1]*Fi[y]}
   }
