@@ -1044,9 +1044,9 @@ La \textbf{Figura \ref{Fig16}} muestra las proyecciones de la biomasa de sardina
 
 *"Informar el avance del Programa de Mejoramiento Continuo de la Calidad en la Asesoría Científica (PMCCAC) realizado durante el presente estudio, respecto al cumplimiento de recomendaciones formuladas en procesos de RPEI y priorizadas por el CCT, cuando corresponda."* \vspace{0.5cm}
 
-### 4.4.1. Esquema de trabajo y plan de actividades 2019-2020
+### 4.4.1. Esquema de trabajo y plan de actividades 2019-2021
 
-En coherencia con los requerimientos indicados en los Términos Técnicos de Referencia (TTR) del proyecto "Estatus y posibilidades de explotación biológicamente sustentables de los principales recursos pesqueros nacionales, año 2019", IFOP ha reconocido un conjunto de actividades que pueden ser desarrolladas y abordadas bajo un acuerdo de intención con SSPA. Además de los correspondientes informes técnicos, se han identificado una serie de aspectos a ser abordados en el marco de la evaluación de stock. Estos aspectos son de carácter transversal a los recursos pelágicos analizados y otros particulares en la evaluación de stock de la sardina austral. Para ello se propone el esquema de trabajo presentado en la \textbf{Figura \ref{Fig17}}, el cual fue discutido y consensuado con la SSPA.
+En coherencia con los requerimientos indicados en los Términos Técnicos de Referencia (TTR) del proyecto "Estatus y posibilidades de explotación biológicamente sustentables de los principales recursos pesqueros nacionales", IFOP ha reconocido un conjunto de actividades que pueden ser desarrolladas y abordadas bajo un acuerdo de intención con SSPA. Además de los correspondientes informes técnicos, se han identificado una serie de aspectos a ser abordados en el marco de la evaluación de stock. Estos aspectos son de carácter transversal a los recursos pelágicos analizados y otros particulares en la evaluación de stock de la sardina austral. Para ello se propone el esquema de trabajo presentado en la \textbf{Figura \ref{Fig17}}, el cual fue discutido y consensuado con la SSPA.
 
 \vspace{0.5cm}
 
@@ -1062,7 +1062,7 @@ En coherencia con los requerimientos indicados en los Términos Técnicos de Ref
 
 El esquema de trabajo de datos y modelos consiste en los siguientes pasos:
 
-i)  Especificación de EV(t+1) (septiembre 2019) sobre la base de las MM(t) presentadas en la asesoría anterior, EV(t) las cuales serán presentadas y discutidas con el CCT-PP para la definición del caso base, EV(t+1), utilizado para establecer el estatus y CBA 2020.
+i)  Especificación de EV(t+1) (septiembre) sobre la base de las MM(t) presentadas en la asesoría anterior, EV(t) las cuales serán presentadas y discutidas con el CCT-PP para la definición del caso base, EV(t+1), utilizado para establecer el estatus y CBA.
 
 ii) IFOP presenta propuestas de MM(t+1) para trabajar durante el desarrollo de este proyecto que recogerán algunas de las observaciones a la EV(t) de revisores por pares (RPP) nacionales, CCT-PP y SSPA, junto a recomendaciones de la RPP internacional.
 
