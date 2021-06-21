@@ -99,7 +99,7 @@ sim1=function(k25=k25,k75=k75,r25=r25,r75=r75,yr=yr,C=C,nsim=nsim,msy=NULL){
 
 
 # Ingresa datos de captura 
-```{r,eval=T}
+```{r,eval=F}
 
 #
 #####################################################################
