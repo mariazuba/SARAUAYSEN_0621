@@ -4,7 +4,7 @@ output: pdf_document
 ---
 
 
-# PCOM  Posterior-focused catch-only method  S. Zhou, Modificado por Elson Leal  para sardina austral Aysen 2019, CBA 2020 
+# PCOM  Posterior-focused catch-only method  S. Zhou, Modificado por Elson Leal y María José Zúñiga  para sardina austral Aysen, CBA 2021
 
  This method requires time series of catch data only. However, some life history parameters, M, Linf, k, T_max, T_maturation,  will improve the performance. Also, a rough guess of maximum depletion level D = B_end/K will be helpful. This example is for single catch series
 
@@ -99,19 +99,24 @@ sim1=function(k25=k25,k75=k75,r25=r25,r75=r75,yr=yr,C=C,nsim=nsim,msy=NULL){
 
 
 # Ingresa datos de captura 
-```{r}
+```{r,eval=T}
 
 #
 #####################################################################
 # input catch data and r range for sautral XI stock 
+#####################################################################
 C=c(4033,5318,4163,7547,5097,3853,653,1352,1839)
 yr=seq(2012,2020)
 r.lci=0.85;
 r.uci=1.2
+#####################################################################
 # search through K grids, with specific range for K1 follow 
+#####################################################################
 N1=100
 K1=exp(seq(log(max(C)),log(max(C)*50),l=N1))
+#####################################################################
 # genera los valores de la deplecion
+#####################################################################
 dep=round(seq(0.1,0.8,0.05),2)
 nd=length(dep)
 r1=obj1=matrix(0,N1,nd)  #matriz que almacena los output de las funciones
@@ -126,7 +131,7 @@ for(j in 1:nd){
   }
 }
 
-
+#####################################################################
 #
 #vLinf=58.95;vk=0.28;Tmax=10;Tmat=NA;T=17
 #M=vector()
@@ -150,16 +155,22 @@ kr=as.data.frame(cbind(K1,r1))
 colnames(kr)=c('k',dep) 
 all=cbind(K1,stack(kr[,2:nd+1]))#antes nd+1
 colnames(all)=c("k","r","ind")
+
 all$d=as.numeric(as.character(all$ind))
 all=all[,c(1,2,4)]
 all=all[!is.na(all[,2]),] 
 all$msy=all[,1]*all[,2]/4 
+
+#############################
 # estimate reference points
+#############################
 #cutoff=ifelse(tail(C,1)/max(C)<=0.5,0.5,0.8)
-all2     =all[!is.na(all$r) & all$d <= 0.50,]#cutoff,assume upper depeltion=0.4
+all2     =all[!is.na(all$r) & all$d <= 0.45,]#cutoff,assume upper depeltion=0.45
 quan1    =apply(all2,2,quantile)
-k25      =quan1[,1][2];k75=quan1[,1][4]
-r25      =quan1[,2][2];r75=quan1[,2][4]
+k25      =quan1[,1][2]
+k75      =quan1[,1][4]
+r25      =quan1[,2][2]
+r75      =quan1[,2][4]
 msy.media=quan1[,4][3]
 all3     =all2[all2$k>k25 & all2$k<k75 & all2$r>r25 & all2$r<r75,]
 para     =list(k25=k25,k75=k75,r25=r25,r75=r75)
@@ -204,6 +215,7 @@ colnames(sp)=c("k","r","msy","Bend","Depletion")
 BendD=apply(sp,2,quantile)
 ###############################################################
 #FINAL RESULT
+#####################################################################
 tabla<-cbind(quan1[,c(1,2,4)],BendD[,4:5])
 write.csv2(tabla,"tabla1.csv",row.names=FALSE) 
 kable(tabla)
@@ -332,7 +344,7 @@ est<-z$z/max(z$z);z$z<-est
 #Y1<-Fest/Fmrs;X1<-Bioma[2,]/Bmrs
 #
 soli<-cbind(yr,round(Bioma[3,],0),round(Fest,2),round(Z1,2),round(X1,2),round(Y1,2))
-colnames(soli)<-c("year","BD","Fest","B_Bo","Brel","Frel")
+colnames(soli)<-c("year","BT","Fest","B_Bo","Brel","Frel")
 
 kable(soli)
 
@@ -391,6 +403,8 @@ box()
 
 
 ```
+
+
 
 \pagebreak
 
@@ -472,11 +486,10 @@ abline(h=Bmrs,lty=2,lwd=2,col=cols)
 axis(2,at=ax2,labels=ax2/1000,las=1,cex=1)
 mtext(BB,side=2,line=3.5,cex=1.2)
 mtext("Años",side=1,line=3.4,cex=1.2)
-legend(2021,rng1[2]*0.5,c(expression(F[paste("0,31")]),expression(F[paste("0,46")]),
+legend(2021,rng1[2]*0.5,c(expression(F[paste("0,30")]),expression(F[paste("0,46")]),
 expression(F[paste("0,58")])),lty=c(2,2,2,2,2),lwd=c(2,2,2,2,2),cex=1.4,
 col=c(1,2,3),bty="n")
 
-xxxx
 ```
 
 ```{r Fig6_Zhou2013_capturas,eval=T,warning=F, include=T, message=F, echo=T,fig.height=5,fig.width=5,fig.align="center",fig.path="Figuras/",dev="pdf"}
@@ -502,18 +515,17 @@ abline(h=MRS,lty=2,lwd=2,col=cols)
 axis(2,at=ax3,labels=sprintf("%0.0f",ax3/1000),las=1,cex=1.4)
 mtext(CC,side=2,line=3.5,cex=1.2)
 mtext("Años",side=1,line=3.4,cex=1.2)
-legend(2021,rng2[2]*0.5,c(expression(F[paste("0,31")]),expression(F[paste("0,46")]),
+legend(2021,rng2[2]*0.5,c(expression(F[paste("0,30")]),expression(F[paste("0,46")]),
 expression(F[paste("0,58")])),lty=c(2,2,2,2,2),lwd=c(2,2,2,2,2),cex=1.4,
 col=c(1,2,3),bty="n")
 
 
-xxxx
 ```
 
 
 ```{r , echo=T}
 ##################################################################################################
-# TABLA DE RESULTADOS
+# TABLA DE RESULTADOS CAPTURA 2021
 ##################################################################################################
 ct<-matrix(NA,length(Fi),5)
 for(i in 1:length(Fi)){
@@ -525,6 +537,33 @@ cat("\n")
 print(ct)
 
 ```
+
+
+
+```{r Fig7_Zhou2013_compara,eval=T,warning=F, include=T, message=F, echo=T,fig.height=4,fig.width=7,fig.align="center",fig.path="Figuras/",dev="pdf"}
+##################################################################################################
+# TABLA DE RESULTADOS biomasa 2021
+##################################################################################################
+bt<-matrix(NA,length(Fi),5)
+for(i in 1:length(Fi)){
+ bt[i,]<-as.numeric(quantile(BT[i,,2],probs=c(.1,.2,.3,.4,.5)))  # CT[i,,2] (el 2 representa 1 año de proyección, 1 es el año actual)
+}
+colnames(bt)<-c("10%","20%","30%","40%","50%")
+rownames(bt)<-formatC(Fi,format="f",digits=2)
+cat("\n")
+print(bt)
+
+
+year<-seq(2012,2021)
+bioHil<-c(NA,17712,12394,11186,6911,5161,4212,6108,7933,8592)
+
+par(mar=c(5,5,1,1),cex.axis=1,cex.lab=1)
+plot(year,c(soli[,2],bt[2,5]),type="o",pch=19,ylim=c(0,20000), xaxp=c(2012,2022,10),ylab="Biomasa total",xlab="Años")
+lines(year,bioHil,type="o",col=2,pch=19)
+legend(2017,16000,c("Hilborn y Mangel 1997","Zhou 2013"),
+       bty="n",lwd=1,pch=19,col=c(2,1), title="Método de estimación")
+```
+
 
 ```{r, echo=T}
 

@@ -16,6 +16,9 @@ header-includes:
 - \pagestyle{fancy}
 - \usepackage{geometry}
 - \geometry{top=1.5cm, bottom=1cm, left=2.5cm, right=2.5cm}
+
+#- \usepackage{fontspec} probar para cambiar fuente
+#- \setmainfont{Arial}
 - \usepackage{helvet}
 - \renewcommand{\familydefault}{\sfdefault}
 
