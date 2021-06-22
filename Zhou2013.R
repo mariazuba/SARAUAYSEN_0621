@@ -82,8 +82,8 @@ sim1=function(k25=k25,k75=k75,r25=r25,r75=r75,yr=yr,C=C,nsim=nsim,msy=NULL){
 #
 #####################################################################
 # input catch data and r range for sautral XI stock 
-C=c(4033,5318,4163,7547,5097,3853,653,1352,1839,2797)
-yr=seq(2012,2021)
+C=c(4033,5318,4163,7547,5097,3853,653,1352,1839)
+yr=seq(2012,2020)
 r.lci=0.85;r.uci=1.2
 # search through K grids, with specific range for K1 follow 
 N1=100
@@ -132,7 +132,7 @@ all=all[!is.na(all[,2]),]
 all$msy=all[,1]*all[,2]/4 
 # estimate reference points
 #cutoff=ifelse(tail(C,1)/max(C)<=0.5,0.5,0.8)
-all2=all[!is.na(all$r) & all$d <= 0.5,]#cutoff,assume upper depeltion=0.4
+all2=all[!is.na(all$r) & all$d <= 0.45,]#cutoff,assume upper depeltion=0.4
 quan1=apply(all2,2,quantile)
 k25=quan1[,1][2];k75=quan1[,1][4]
 r25=quan1[,2][2];r75=quan1[,2][4]
