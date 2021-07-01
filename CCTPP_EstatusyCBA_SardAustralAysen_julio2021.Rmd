@@ -106,6 +106,8 @@ institute: INSTITUTO DE FOMENTO PESQUERO
 | 50%         | 2.797    | 4.196    | 5.245    |
 +-------------+----------+----------+----------+
 
+Considerando un $F$ = 0,31 equivalente a 2/3 $F_{RMS}$, el CCT-PP recomendó una CBA máxima de 2.797 toneladas para el año 2021.
+
 # Actualización de la CBA 2021 (Asesoría de junio 2021 - Hito 2)
 
 +-------------+----------+----------+----------+
